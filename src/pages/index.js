@@ -1,9 +1,9 @@
-import React from "react"
+import * as React from "react"
+import "../styles/styles.scss"
 import Hero from "../components/Hero"
 import FloatingItems from "../components/FloatingItems"
 import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
-import "../styles/styles.scss"
 
 function Home() {
   return (
