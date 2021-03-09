@@ -1,0 +1,87 @@
+.floating-items {
+  position: relative;
+  padding: 3vw;
+  height: 190vw;
+}
+
+.item {
+  position: absolute;
+  display: flex;
+}
+
+.item__image {
+  object-fit: cover;
+}
+
+.item__text {
+  font-weight: 200;
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+
+.item__text--initial {
+  font-family: "Abril Fatface", cursive;
+  font-size: 6vw;
+}
+
+.item--1 {
+  flex-direction: row-reverse;
+  right: 3vw;
+
+  .item__image-wrapper {
+    width: 40vw;
+  }
+
+  .item__text {
+    width: 30vw;
+    margin-right: 3vw;
+    text-align: right;
+  }
+}
+
+.item--2 {
+  flex-direction: column;
+  top: 30vw;
+
+  .item__image-wrapper {
+    width: 30vw;
+  }
+
+  .item__text {
+    width: 25vw;
+    margin-top: 3vw;
+  }
+}
+
+.item--3 {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  top: 70vw;
+  right: 10vw;
+
+  .item__image-wrapper {
+    width: 40vw;
+  }
+
+  .item__text {
+    width: 35vw;
+    margin-bottom: 2vw;
+    text-align: right;
+  }
+}
+
+.item--4 {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  top: 130vw;
+
+  .item__image-wrapper {
+    width: 65vw;
+  }
+
+  .item__text {
+    width: 25vw;
+    margin-right: 3vw;
+    text-align: right;
+  }
+}

@@ -1,0 +1,43 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 6vw;
+
+  .list {
+    width: 20vw;
+  }
+
+  h4 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 1.1vw;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 1vw;
+      font-size: 0.875vw;
+      font-weight: 200;
+
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 0.2vw;
+      }
+    }
+  }
+
+  .site {
+    text-align: center;
+  }
+
+  .social {
+    text-align: right;
+  }
+}

@@ -1,0 +1,92 @@
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero__title-wrapper {
+  font-family: "Abril Fatface", cursive;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  color: $white;
+  font-size: 14vw;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.hero__loading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: $black;
+}
+
+.hero__image-wrapper {
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+  overflow: hidden;
+}
+
+.hero__image-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: $white;
+  font-size: 1vw;
+  font-weight: 400;
+  letter-spacing: 0.05vw;
+  line-height: 0.95vw;
+  z-index: 3;
+
+  .tag {
+    position: absolute;
+    top: 3vw;
+    text-transform: uppercase;
+
+    &.left {
+      left: 3vw;
+    }
+
+    &.right {
+      right: 3vw;
+      text-align: right;
+    }
+  }
+
+  .opening-hours {
+    position: absolute;
+    left: 3vw;
+    bottom: 3vw;
+    font-weight: 500;
+  }
+
+  .address {
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    text-align: right;
+  }
+}
+
+.hero__down-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3vw;
+  color: $white;
+}
