@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import {
   motion,
   AnimatePresence,
@@ -19,7 +19,7 @@ const defaultOpeningHours = [
 
 // Animations
 const smoothTransition = {
-  duration: 1,
+  duration: 1.3,
   ease: [0.43, 0.13, 0.23, 0.96],
 }
 
@@ -37,7 +37,6 @@ const loadingVariants = {
     transition: {
       ...smoothTransition,
       delay: 2,
-      duration: 1,
     },
   },
 }
@@ -51,7 +50,6 @@ const contentVariants = {
     transition: {
       ...smoothTransition,
       delay: 2.5,
-      duration: 1,
     },
   },
 }
@@ -64,7 +62,6 @@ const titleVariants = {
     y: 0,
     transition: {
       ...fastTransition,
-      duration: 1,
     },
   },
 }
@@ -97,14 +94,14 @@ function Hero() {
             className="hero__image-inner"
             style={{ top: heroImageScroll }}
           >
-            <StaticImage
+            {/* <StaticImage
               className="hero__image"
               src="../images/espresso-pour.jpg"
               alt="espresso pour"
               layout="fullWidth"
               loading="eager"
               placeholder="#1d1d1d"
-            />
+            /> */}
           </motion.div>
         </div>
         <motion.div
