@@ -1,12 +1,8 @@
 import React from "react"
-
-// Components
 import Hero from "../components/Hero"
 import FloatingItems from "../components/FloatingItems"
 import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
-
-// Styles
 import "../styles/styles.scss"
 
 function Home() {
