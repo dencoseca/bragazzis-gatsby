@@ -1,5 +1,5 @@
 import React from "react"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import {
   motion,
   AnimatePresence,
@@ -94,14 +94,14 @@ function Hero() {
             className="hero__image-inner"
             style={{ top: heroImageScroll }}
           >
-            {/* <StaticImage
+            <StaticImage
               className="hero__image"
               src="../images/espresso-pour.jpg"
               alt="espresso pour"
               layout="fullWidth"
               loading="eager"
               placeholder="#1d1d1d"
-            /> */}
+            />
           </motion.div>
         </div>
         <motion.div

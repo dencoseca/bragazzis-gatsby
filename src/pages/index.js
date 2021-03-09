@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 // Components
 import Hero from "../components/Hero"
@@ -19,7 +19,7 @@ function Home() {
         <span>been looking for</span>
       </div>
       <FloatingItems />
-      <div className="full-width-banner">
+      {/* <div className="full-width-banner">
         <StaticImage
           className="full-width-banner__image"
           src="../images/egg.jpg"
@@ -30,7 +30,7 @@ function Home() {
           <span>Each season brings a selection of</span>
           <span>well considered products</span>
         </div>
-      </div>
+      </div> */}
       <section className="covid-notice">
         <h3>Covid Restrictions</h3>
         <p>
