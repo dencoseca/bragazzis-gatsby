@@ -9,6 +9,7 @@ function FullWidthBanner() {
         src="../images/egg.jpg"
         alt="a gigantic italian chocolate easter egg"
         layout="fullWidth"
+        loading="eager"
       />
       <div className="full-width-banner__text">
         <span>Each season brings a selection of</span>
