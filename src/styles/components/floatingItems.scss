@@ -1,7 +1,7 @@
 .floating-items {
   position: relative;
   padding: 3vw;
-  height: 190vw;
+  height: 120vw;
 }
 
 .item {
@@ -41,7 +41,7 @@
 
 .item--2 {
   flex-direction: column;
-  top: 30vw;
+  // top: 30vw;
 
   .item__image-wrapper {
     width: 30vw;
@@ -56,7 +56,7 @@
 .item--3 {
   flex-direction: column-reverse;
   align-items: flex-end;
-  top: 70vw;
+  // top: 70vw;
   right: 10vw;
 
   .item__image-wrapper {
@@ -73,7 +73,7 @@
 .item--4 {
   flex-direction: row-reverse;
   justify-content: flex-start;
-  top: 130vw;
+  // top: 130vw;
 
   .item__image-wrapper {
     width: 65vw;
