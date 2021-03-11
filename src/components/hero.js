@@ -62,7 +62,6 @@ const titleVariants = {
     y: 0,
     transition: {
       ...fastTransition,
-      duration: 0.3,
     },
   },
 }
@@ -93,7 +92,7 @@ function Hero() {
           ></motion.div>
           <motion.div
             className="hero__image-inner"
-            style={{ top: heroImageScroll }}
+            style={{ top: window.innerWidth >= 768 ? heroImageScroll : 0 }}
           >
             <StaticImage
               className="hero__image"
