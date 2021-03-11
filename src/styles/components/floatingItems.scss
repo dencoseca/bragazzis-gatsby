@@ -1,7 +1,7 @@
 .floating-items {
   position: relative;
   padding: 3vw;
-  height: 175vw;
+  height: 180vw;
 
   @media (max-width: 768px) {
     height: 515vw;
@@ -30,7 +30,7 @@
   @media (max-width: 768px) {
     margin: 3vw 0;
     font-size: 3vw;
-    line-height: 3.8vw;
+    line-height: 4vw;
   }
 }
 
