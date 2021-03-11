@@ -4,7 +4,7 @@
   height: 175vw;
 
   @media (max-width: 768px) {
-    height: 525vw;
+    height: 515vw;
     padding: 0 3vw;
   }
 }
@@ -88,11 +88,11 @@
 
   @media (max-width: 768px) {
     .item__image-wrapper {
-      width: 70vw;
+      width: 60vw;
     }
 
     .item__text {
-      width: 70vw;
+      width: 60vw;
     }
   }
 }
