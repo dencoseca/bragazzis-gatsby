@@ -2,11 +2,20 @@
   position: relative;
   padding: 3vw;
   height: 175vw;
+
+  @media (max-width: 768px) {
+    height: 525vw;
+    padding: 0 3vw;
+  }
 }
 
 .item {
   position: relative;
   display: flex;
+
+  @media (max-width: 768px) {
+    margin: 8vw 0;
+  }
 }
 
 .item__image {
@@ -17,11 +26,21 @@
   font-weight: 200;
   font-size: 1vw;
   line-height: 1.5vw;
+
+  @media (max-width: 768px) {
+    margin: 3vw 0;
+    font-size: 3vw;
+    line-height: 3.8vw;
+  }
 }
 
 .item__text--initial {
   font-family: "Abril Fatface", cursive;
   font-size: 6vw;
+
+  @media (max-width: 768px) {
+    font-size: 8vw;
+  }
 }
 
 .item--1 {
@@ -37,6 +56,22 @@
     margin-right: 3vw;
     text-align: right;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    right: 0;
+    align-items: flex-end;
+
+    .item__image-wrapper {
+      width: 70vw;
+    }
+
+    .item__text {
+      width: 70vw;
+      text-align: right;
+      margin-right: 0;
+    }
+  }
 }
 
 .item--2 {
@@ -49,6 +84,16 @@
   .item__text {
     width: 25vw;
     margin-top: 3vw;
+  }
+
+  @media (max-width: 768px) {
+    .item__image-wrapper {
+      width: 70vw;
+    }
+
+    .item__text {
+      width: 70vw;
+    }
   }
 }
 
@@ -66,6 +111,20 @@
     margin-bottom: 2vw;
     text-align: right;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    right: 0;
+
+    .item__image-wrapper {
+      width: 70vw;
+    }
+
+    .item__text {
+      width: 70vw;
+      text-align: right;
+    }
+  }
 }
 
 .item--4 {
@@ -80,5 +139,19 @@
     width: 25vw;
     margin-right: 3vw;
     text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .item__image-wrapper {
+      width: 85vw;
+    }
+
+    .item__text {
+      width: 85vw;
+      margin-right: 0;
+      text-align: left;
+    }
   }
 }

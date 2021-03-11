@@ -18,7 +18,10 @@ function FloatingItems() {
   return (
     <AnimatePresence>
       <section className="floating-items">
-        <motion.div className="item item--1" style={{ top: item1Scroll }}>
+        <motion.div
+          className="item item--1"
+          style={{ top: window.innerWidth >= 768 ? item1Scroll : 0 }}
+        >
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
@@ -48,7 +51,10 @@ function FloatingItems() {
             </p>
           </div>
         </motion.div>
-        <motion.div className="item item--2" style={{ top: item2Scroll }}>
+        <motion.div
+          className="item item--2"
+          style={{ top: window.innerWidth >= 768 ? item2Scroll : 0 }}
+        >
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
@@ -68,7 +74,10 @@ function FloatingItems() {
             </p>
           </div>
         </motion.div>
-        <motion.div className="item item--3" style={{ top: item3Scroll }}>
+        <motion.div
+          className="item item--3"
+          style={{ top: window.innerWidth >= 768 ? item3Scroll : 0 }}
+        >
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
@@ -86,7 +95,10 @@ function FloatingItems() {
             </p>
           </div>
         </motion.div>
-        <motion.div className="item item--4" style={{ top: item4Scroll }}>
+        <motion.div
+          className="item item--4"
+          style={{ top: window.innerWidth >= 768 ? item4Scroll : 0 }}
+        >
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
