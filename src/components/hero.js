@@ -62,6 +62,7 @@ const titleVariants = {
     y: 0,
     transition: {
       ...fastTransition,
+      duration: 0.3,
     },
   },
 }
@@ -96,7 +97,7 @@ function Hero() {
           >
             <StaticImage
               className="hero__image"
-              src="../images/cafe-view.jpg"
+              src="../images/cafe-view-gradient.jpg"
               alt="espresso pour"
               layout="fullWidth"
               loading="eager"

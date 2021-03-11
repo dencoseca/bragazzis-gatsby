@@ -13,7 +13,7 @@ function FloatingItems() {
   let item1Scroll = useTransform(scrollYProgress, [0, 1], [vw * 10, vw * -50])
   let item2Scroll = useTransform(scrollYProgress, [0, 1], [vw * 20, vw * -90])
   let item3Scroll = useTransform(scrollYProgress, [0, 1], [vw * -30, vw * -70])
-  let item4Scroll = useTransform(scrollYProgress, [0, 1], [vw * 15, vw * -75])
+  let item4Scroll = useTransform(scrollYProgress, [0, 1], [vw * 15, vw * -70])
 
   return (
     <AnimatePresence>
