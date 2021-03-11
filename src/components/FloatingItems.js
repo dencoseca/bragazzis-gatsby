@@ -10,10 +10,10 @@ import {
 function FloatingItems() {
   const vw = window.innerWidth / 100
   const { scrollYProgress } = useViewportScroll()
-  let item1Scroll = useTransform(scrollYProgress, [0, 1], [vw * 20, -1000])
-  let item2Scroll = useTransform(scrollYProgress, [0, 1], [vw * 70, -500])
-  let item3Scroll = useTransform(scrollYProgress, [0, 1], [vw * 130, 0])
-  let item4Scroll = useTransform(scrollYProgress, [0, 1], [vw * 250, 200])
+  let item1Scroll = useTransform(scrollYProgress, [0, 1], [200, -1000])
+  let item2Scroll = useTransform(scrollYProgress, [0, 1], [300, -2000])
+  let item3Scroll = useTransform(scrollYProgress, [0, 1], [-300, -1800])
+  let item4Scroll = useTransform(scrollYProgress, [0, 1], [300, -1800])
 
   return (
     <AnimatePresence>
