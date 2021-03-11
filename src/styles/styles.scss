@@ -38,6 +38,10 @@ html {
   align-items: center;
   flex-direction: column;
 
+  @media (max-width: 768px) {
+    margin-top: 6vw;
+  }
+
   span {
     font-family: "Abril Fatface", cursive;
     font-size: 3vw;
