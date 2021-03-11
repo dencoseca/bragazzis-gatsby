@@ -118,8 +118,14 @@ function Hero() {
             ))}
           </div>
           <div className="address">
-            <p>224-228 Abbeydale Road</p>
-            <p>Sheffield</p>
+            <a
+              href="https://goo.gl/maps/n4uLGJGtaqSjSfoo6"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>224-228 Abbeydale Road</p>
+              <p>Sheffield</p>
+            </a>
           </div>
         </motion.div>
         <motion.svg

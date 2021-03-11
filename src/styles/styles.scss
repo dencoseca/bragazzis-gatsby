@@ -57,10 +57,18 @@ html {
   align-items: center;
   text-align: center;
 
+  @media (max-width: 768px) {
+    height: 90vw;
+  }
+
   h3 {
     font-family: "Abril Fatface", cursive;
     font-size: 3vw;
     margin-bottom: 2vw;
+
+    @media (max-width: 768px) {
+      font-size: 4vw;
+    }
   }
 
   p {
@@ -69,16 +77,8 @@ html {
     max-width: 40vw;
     line-height: 1.5vw;
     margin: 1vw 0;
-  }
 
-  @media (max-width: 768px) {
-    height: 90vw;
-
-    h3 {
-      font-size: 4vw;
-    }
-
-    p {
+    @media (max-width: 768px) {
       font-size: 3vw;
       line-height: 4vw;
       max-width: 80vw;

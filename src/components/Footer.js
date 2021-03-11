@@ -7,9 +7,15 @@ function Footer() {
         <h4>Contact</h4>
         <ul>
           <li>
-            <p>224-228 Abbeydale Road</p>
-            <p>Sheffield</p>
-            <p>S7 1FL</p>
+            <a
+              href="https://goo.gl/maps/n4uLGJGtaqSjSfoo6"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>224-228 Abbeydale Road</p>
+              <p>Sheffield</p>
+              <p>S7 1FL</p>
+            </a>
           </li>
           <li>
             <a href="mailto:info@braazzis.co.uk">info@bragazzis.co.uk</a>
@@ -25,10 +31,19 @@ function Footer() {
           <li>&copy; 2020 Bragazzi's Ltd</li>
           <li>
             photography by{" "}
-            <a href="https://www.maytreephotography.co.uk">maytree</a>
+            <a
+              href="https://www.maytreephotography.co.uk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              maytree
+            </a>
           </li>
           <li>
-            site by <a href="https://leonbrown.dev">LEON BROWN</a>
+            site by{" "}
+            <a href="https://leonbrown.dev" target="_blank" rel="noreferrer">
+              LEON BROWN
+            </a>
           </li>
         </ul>
       </div>
@@ -36,13 +51,29 @@ function Footer() {
         <h4>Social</h4>
         <ul>
           <li>
-            <a href="https://www.facebook.com/bragazzis/">Facebook</a>
+            <a
+              href="https://www.facebook.com/bragazzis/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/bragazzis/">Instagram</a>
+            <a
+              href="https://www.instagram.com/bragazzis/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
           </li>
           <li>
-            <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g186364-d3435970-Reviews-Bragazzis-Sheffield_South_Yorkshire_England.html">
+            <a
+              href="https://www.tripadvisor.co.uk/Restaurant_Review-g186364-d3435970-Reviews-Bragazzis-Sheffield_South_Yorkshire_England.html"
+              target="_blank"
+              rel="noreferrer"
+            >
               TripAdvisor
             </a>
           </li>

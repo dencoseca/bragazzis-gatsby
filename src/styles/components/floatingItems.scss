@@ -47,26 +47,26 @@
   flex-direction: row-reverse;
   right: 3vw;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    right: 0;
+    align-items: flex-end;
+  }
+
   .item__image-wrapper {
     width: 40vw;
+
+    @media (max-width: 768px) {
+      width: 70vw;
+    }
   }
 
   .item__text {
     width: 30vw;
     margin-right: 3vw;
     text-align: right;
-  }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    right: 0;
-    align-items: flex-end;
-
-    .item__image-wrapper {
-      width: 70vw;
-    }
-
-    .item__text {
+    @media (max-width: 768px) {
       width: 70vw;
       text-align: right;
       margin-right: 0;
@@ -79,19 +79,17 @@
 
   .item__image-wrapper {
     width: 30vw;
+
+    @media (max-width: 768px) {
+      width: 60vw;
+    }
   }
 
   .item__text {
     width: 25vw;
     margin-top: 3vw;
-  }
 
-  @media (max-width: 768px) {
-    .item__image-wrapper {
-      width: 60vw;
-    }
-
-    .item__text {
+    @media (max-width: 768px) {
       width: 60vw;
     }
   }
@@ -102,25 +100,25 @@
   align-items: flex-end;
   right: 10vw;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    right: 0;
+  }
+
   .item__image-wrapper {
     width: 40vw;
+
+    @media (max-width: 768px) {
+      width: 70vw;
+    }
   }
 
   .item__text {
     width: 35vw;
     margin-bottom: 2vw;
     text-align: right;
-  }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    right: 0;
-
-    .item__image-wrapper {
-      width: 70vw;
-    }
-
-    .item__text {
+    @media (max-width: 768px) {
       width: 70vw;
       text-align: right;
     }
@@ -131,24 +129,24 @@
   flex-direction: row-reverse;
   justify-content: flex-start;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   .item__image-wrapper {
     width: 65vw;
+
+    @media (max-width: 768px) {
+      width: 85vw;
+    }
   }
 
   .item__text {
     width: 25vw;
     margin-right: 3vw;
     text-align: right;
-  }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-
-    .item__image-wrapper {
-      width: 85vw;
-    }
-
-    .item__text {
+    @media (max-width: 768px) {
       width: 85vw;
       margin-right: 0;
       text-align: left;

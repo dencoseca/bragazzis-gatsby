@@ -85,6 +85,11 @@
     right: 3vw;
     bottom: 3vw;
     text-align: right;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
   }
 
   @media (max-width: 768px) {
