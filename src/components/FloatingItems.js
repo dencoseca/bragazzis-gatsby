@@ -35,7 +35,7 @@ function FloatingItems() {
               <span className="item__text--initial">We</span> are a small team
               of people, with different interests and experiences, but with a
               common appreciation for the somewhat overlooked, and at times
-              undervalued occupation, of shopkeeping and the unrelenting pursuit
+              undervalued occupation of shopkeeping, and the unrelenting pursuit
               of making good coffee.
             </p>
             <p>

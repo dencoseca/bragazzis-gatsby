@@ -96,7 +96,7 @@ function Hero() {
           >
             <StaticImage
               className="hero__image"
-              src="../images/cafe-view-gradient.jpg"
+              src="../images/cafe-view.jpg"
               alt="espresso pour"
               layout="fullWidth"
               loading="eager"
