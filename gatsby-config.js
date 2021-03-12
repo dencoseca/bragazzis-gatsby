@@ -7,7 +7,9 @@
 module.exports = {
   siteMetadata: {
     title: `Bragazzis`,
+    titleTemplate: `Bragazzi's | %s`,
     description: `Purveyors of quality Italian goods.`,
+    url: `https://www.bragazzis.co.uk`,
     author: `Leon Brown`,
   },
   plugins: [
