@@ -11,6 +11,7 @@ module.exports = {
     description: `Purveyors of quality Italian goods.`,
     url: `https://www.bragazzis.co.uk`,
     author: `Leon Brown`,
+    image: `src/images/big-b-square-icon.png`,
   },
   plugins: [
     `gatsby-plugin-sass`,
