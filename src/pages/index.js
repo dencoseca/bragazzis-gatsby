@@ -4,10 +4,12 @@ import Hero from "../components/Hero"
 import FloatingItems from "../components/FloatingItems"
 import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
+import SEO from "../components/SEO"
 
 function Home() {
   return (
     <>
+      <SEO title="Home" />
       <Hero />
       <div className="statement">
         <span>Roam freely and find inspiration...</span>
