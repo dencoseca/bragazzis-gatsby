@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import {
   motion,
@@ -6,6 +6,7 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion"
+
 
 const defaultOpeningHours = [
   "Munday: closed",
@@ -67,8 +68,14 @@ const titleVariants = {
 }
 
 function Hero() {
+  const [openingHours, setOpeningHours] = useState(defaultOpeningHours)
+
   const { scrollYProgress } = useViewportScroll()
   const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, 1000])
+
+  // ===========================================
+  // Fetch opening hours from Google Places API
+  // ===========================================
 
   return (
     <AnimatePresence>
@@ -113,7 +120,7 @@ function Hero() {
           <div className="tag left">Purveyors of quality Italian goods</div>
           <div className="tag right">Cafe, shop and delicatessen</div>
           <div className="opening-hours">
-            {defaultOpeningHours.map((line, index) => (
+            {openingHours.map((line, index) => (
               <p key={index}>{line}</p>
             ))}
           </div>
@@ -140,8 +147,8 @@ function Hero() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM23.5858 38.5858L17 32L18.4142 30.5858L24 36.1716V9H26V36.1716L31.5858 30.5858L33 32L26.4142 38.5858L26 39L25 40L24 39L23.5858 38.5858Z"
             fill="#f6f4f1"
           />
