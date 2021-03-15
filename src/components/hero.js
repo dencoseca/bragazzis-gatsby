@@ -46,10 +46,10 @@ const contentVariants = {
 
 const titleVariants = {
   initial: {
-    y: 400,
+    translateY: 400,
   },
   animate: {
-    y: 0,
+    translateY: 0,
     transition: {
       ...fastTransition,
     },
@@ -82,7 +82,9 @@ function Hero({ openingHours }) {
           ></motion.div>
           <motion.div
             className="hero__image-inner"
-            style={{ top: window.innerWidth >= 768 ? heroImageScroll : 0 }}
+            style={{
+              translateY: window.innerWidth >= 768 ? heroImageScroll : 0,
+            }}
           >
             <StaticImage
               className="hero__image"
