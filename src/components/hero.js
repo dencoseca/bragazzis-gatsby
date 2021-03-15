@@ -56,9 +56,10 @@ const titleVariants = {
   },
 }
 
-function Hero({ openingHours }) {
+function Hero({ openingHours, dimensions }) {
+  const vh = dimensions.height / 100
   const { scrollYProgress } = useViewportScroll()
-  const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, 1000])
+  const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, vh * 59])
 
   return (
     <AnimatePresence>

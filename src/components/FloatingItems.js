@@ -7,12 +7,13 @@ import {
   useViewportScroll,
 } from "framer-motion"
 
-function FloatingItems() {
+function FloatingItems({ dimensions }) {
+  const vw = dimensions.width / 100
   const { scrollYProgress } = useViewportScroll()
-  let item1Scroll = useTransform(scrollYProgress, [0, 1], [0, -1000])
-  let item2Scroll = useTransform(scrollYProgress, [0, 1], [0, -2000])
-  let item3Scroll = useTransform(scrollYProgress, [0, 1], [0, -1000])
-  let item4Scroll = useTransform(scrollYProgress, [0, 1], [0, -500])
+  let item1Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -59])
+  let item2Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -118])
+  let item3Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -59])
+  let item4Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -29])
 
   return (
     <AnimatePresence>

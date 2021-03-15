@@ -54,13 +54,13 @@ function Home({ data }) {
   return (
     <>
       <SEO title="Home" />
-      <Hero openingHours={openingHours} />
+      <Hero openingHours={openingHours} dimensions={dimensions} />
       <div className="statement">
         <span>Roam freely and find inspiration...</span>
         <span>or that obscure pasta shape that you've</span>
         <span>been looking for</span>
       </div>
-      <FloatingItems />
+      <FloatingItems dimensions={dimensions} />
       <FullWidthBanner />
       <section className="covid-notice">
         <h3>Covid Restrictions</h3>
