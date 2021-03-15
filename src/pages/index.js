@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
 import "../styles/styles.scss"
 import Hero from "../components/Hero"
@@ -7,11 +7,50 @@ import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
 import SEO from "../components/SEO"
 
+// Setup debounce function for window resize
+function debounce(fn, ms) {
+  let timer
+  return () => {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  }
+}
+
 function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
 
-  console.log(data)
+  // =========================================
+  // Set new vh in css when window is resized
+  // =========================================
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  })
+
+  useEffect(() => {
+    // Grab inner height of window
+    let vh = dimensions.height * 0.01
+    // Set css variable vh
+    document.documentElement.style.setProperty("--vh", `${vh}px`)
+
+    const debouncedHandleResize = debounce(function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      })
+    }, 1000)
+
+    window.addEventListener("resize", debouncedHandleResize)
+
+    return () => {
+      window.removeEventListener("resize", debouncedHandleResize)
+    }
+  }, [dimensions])
+
   return (
     <>
       <SEO title="Home" />
