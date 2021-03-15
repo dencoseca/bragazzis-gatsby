@@ -19,5 +19,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-google-places`,
+      options: {
+        placeIds: ["ChIJXQTkrGGCeUgRSaL1gEOk_MY"],
+        apiKey: `AIzaSyCEPSNPE122T-zXTfeZVGXCQRy35LlbNKY`,
+        language: "en-US", // optional, defaults to en-US
+      },
+    },
   ],
 }

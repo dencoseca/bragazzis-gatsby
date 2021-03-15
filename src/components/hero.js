@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import {
   motion,
@@ -6,17 +6,6 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion"
-
-
-const defaultOpeningHours = [
-  "Munday: closed",
-  "Twosday: closed",
-  "Wenzday: 9.00am - 4.30pm",
-  "Thirsday: 9.00am - 4.30pm",
-  "Fryday: 9.00am - 4.30pm",
-  "Saterday: 9.00am - 4.30pm",
-  "Sonday: closed",
-]
 
 // Animations
 const smoothTransition = {
@@ -67,15 +56,9 @@ const titleVariants = {
   },
 }
 
-function Hero() {
-  const [openingHours, setOpeningHours] = useState(defaultOpeningHours)
-
+function Hero({ openingHours }) {
   const { scrollYProgress } = useViewportScroll()
   const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, 1000])
-
-  // ===========================================
-  // Fetch opening hours from Google Places API
-  // ===========================================
 
   return (
     <AnimatePresence>

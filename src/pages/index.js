@@ -1,4 +1,5 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import "../styles/styles.scss"
 import Hero from "../components/Hero"
 import FloatingItems from "../components/FloatingItems"
@@ -6,11 +7,15 @@ import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
 import SEO from "../components/SEO"
 
-function Home() {
+function Home({ data }) {
+  const openingHours =
+    data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
+
+  console.log(data)
   return (
     <>
       <SEO title="Home" />
-      <Hero />
+      <Hero openingHours={openingHours} />
       <div className="statement">
         <span>Roam freely and find inspiration...</span>
         <span>or that obscure pasta shape that you've</span>
@@ -46,3 +51,17 @@ function Home() {
 }
 
 export default Home
+
+export const query = graphql`
+  query {
+    allGooglePlacesPlace {
+      edges {
+        node {
+          opening_hours {
+            weekday_text
+          }
+        }
+      }
+    }
+  }
+`
