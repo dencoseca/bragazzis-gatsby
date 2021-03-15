@@ -1,7 +1,7 @@
 .floating-items {
   position: relative;
   padding: 3vw;
-  height: 175vw;
+  height: 155vw;
 
   @media (max-width: 768px) {
     height: 515vw;
@@ -46,6 +46,7 @@
 .item--1 {
   flex-direction: row-reverse;
   right: 3vw;
+  top: 10vw;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -76,6 +77,7 @@
 
 .item--2 {
   flex-direction: column;
+  top: 20vw;
 
   .item__image-wrapper {
     width: 30vw;
@@ -99,6 +101,7 @@
   flex-direction: column-reverse;
   align-items: flex-end;
   right: 10vw;
+  top: -35vw;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -128,6 +131,7 @@
 .item--4 {
   flex-direction: row-reverse;
   justify-content: flex-start;
+  top: -35vw;
 
   @media (max-width: 768px) {
     flex-direction: column;

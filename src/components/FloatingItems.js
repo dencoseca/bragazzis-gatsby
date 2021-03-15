@@ -8,19 +8,18 @@ import {
 } from "framer-motion"
 
 function FloatingItems() {
-  const vw = window.innerWidth / 100
   const { scrollYProgress } = useViewportScroll()
-  let item1Scroll = useTransform(scrollYProgress, [0, 1], [vw * 10, vw * -50])
-  let item2Scroll = useTransform(scrollYProgress, [0, 1], [vw * 20, vw * -90])
-  let item3Scroll = useTransform(scrollYProgress, [0, 1], [vw * -30, vw * -70])
-  let item4Scroll = useTransform(scrollYProgress, [0, 1], [vw * 15, vw * -70])
+  let item1Scroll = useTransform(scrollYProgress, [0, 1], [0, -1000])
+  let item2Scroll = useTransform(scrollYProgress, [0, 1], [0, -2000])
+  let item3Scroll = useTransform(scrollYProgress, [0, 1], [0, -1000])
+  let item4Scroll = useTransform(scrollYProgress, [0, 1], [0, -500])
 
   return (
     <AnimatePresence>
       <section className="floating-items">
         <motion.div
           className="item item--1"
-          style={{ top: window.innerWidth >= 768 ? item1Scroll : 0 }}
+          style={{ translateY: window.innerWidth >= 768 ? item1Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -53,7 +52,7 @@ function FloatingItems() {
         </motion.div>
         <motion.div
           className="item item--2"
-          style={{ top: window.innerWidth >= 768 ? item2Scroll : 0 }}
+          style={{ translateY: window.innerWidth >= 768 ? item2Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -76,7 +75,7 @@ function FloatingItems() {
         </motion.div>
         <motion.div
           className="item item--3"
-          style={{ top: window.innerWidth >= 768 ? item3Scroll : 0 }}
+          style={{ translateY: window.innerWidth >= 768 ? item3Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -97,7 +96,7 @@ function FloatingItems() {
         </motion.div>
         <motion.div
           className="item item--4"
-          style={{ top: window.innerWidth >= 768 ? item4Scroll : 0 }}
+          style={{ translateY: window.innerWidth >= 768 ? item4Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
