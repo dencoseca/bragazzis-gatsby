@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 function FullWidthBanner() {
   return (
-    <div className="full-width-banner">
+    <section className="full-width-banner">
       <StaticImage
         className="full-width-banner__image"
         src="../images/egg.jpg"
@@ -11,11 +11,11 @@ function FullWidthBanner() {
         layout="fullWidth"
         loading="eager"
       />
-      <div className="full-width-banner__text">
+      <article className="full-width-banner__text">
         <span>Each season brings a selection of</span>
         <span>well considered products</span>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 

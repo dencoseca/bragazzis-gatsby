@@ -55,11 +55,11 @@ function Home({ data }) {
     <>
       <SEO title="Home" />
       <Hero openingHours={openingHours} dimensions={dimensions} />
-      <div className="statement">
+      <section className="statement">
         <span>Roam freely and find inspiration...</span>
         <span>or that obscure pasta shape that you've</span>
         <span>been looking for</span>
-      </div>
+      </section>
       <FloatingItems dimensions={dimensions} />
       <FullWidthBanner />
       <section className="covid-notice">

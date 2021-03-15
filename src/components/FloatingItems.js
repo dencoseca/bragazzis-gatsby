@@ -18,7 +18,7 @@ function FloatingItems({ dimensions }) {
   return (
     <AnimatePresence>
       <section className="floating-items">
-        <motion.div
+        <motion.article
           className="item item--1"
           style={{ translateY: window.innerWidth >= 768 ? item1Scroll : 0 }}
         >
@@ -50,8 +50,8 @@ function FloatingItems({ dimensions }) {
               from producers in Italy.
             </p>
           </div>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        <motion.article
           className="item item--2"
           style={{ translateY: window.innerWidth >= 768 ? item2Scroll : 0 }}
         >
@@ -73,8 +73,8 @@ function FloatingItems({ dimensions }) {
               across the world.
             </p>
           </div>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        <motion.article
           className="item item--3"
           style={{ translateY: window.innerWidth >= 768 ? item3Scroll : 0 }}
         >
@@ -94,8 +94,8 @@ function FloatingItems({ dimensions }) {
               Year round we sell a wide range of everyday staple foods.
             </p>
           </div>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        <motion.article
           className="item item--4"
           style={{ translateY: window.innerWidth >= 768 ? item4Scroll : 0 }}
         >
@@ -117,7 +117,7 @@ function FloatingItems({ dimensions }) {
               Italian sausage to stir through it.
             </p>
           </div>
-        </motion.div>
+        </motion.article>
       </section>
     </AnimatePresence>
   )
