@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Bragazzis`,
@@ -23,7 +27,7 @@ module.exports = {
       resolve: `gatsby-source-google-places`,
       options: {
         placeIds: ["ChIJXQTkrGGCeUgRSaL1gEOk_MY"],
-        apiKey: `AIzaSyCEPSNPE122T-zXTfeZVGXCQRy35LlbNKY`,
+        apiKey: `${process.env.PLACES_API_KEY}`,
         language: "en-US", // optional, defaults to en-US
       },
     },
