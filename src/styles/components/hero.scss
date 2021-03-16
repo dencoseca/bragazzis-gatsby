@@ -136,8 +136,11 @@
   transform: translateX(-50%);
   bottom: 3vw;
   color: $white;
+  cursor: pointer;
 
-  @media (max-width: $mobile) {
-    width: 10vw;
+  svg {
+    @media (max-width: $mobile) {
+      transform: scale(0.8);
+    }
   }
 }
