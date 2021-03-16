@@ -52,6 +52,7 @@
     flex-direction: column;
     right: 0;
     align-items: flex-end;
+    top: 0;
   }
 
   .item__image-wrapper {
@@ -78,6 +79,10 @@
 .item--2 {
   flex-direction: column;
   top: 20vw;
+
+  @media (max-width: $mobile) {
+    top: 0;
+  }
 
   .item__image-wrapper {
     width: 30vw;
@@ -106,6 +111,7 @@
   @media (max-width: $mobile) {
     flex-direction: column;
     right: 0;
+    top: 0;
   }
 
   .item__image-wrapper {
@@ -135,6 +141,7 @@
 
   @media (max-width: $mobile) {
     flex-direction: column;
+    top: 0;
   }
 
   .item__image-wrapper {

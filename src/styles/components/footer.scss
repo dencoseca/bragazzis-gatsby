@@ -1,11 +1,11 @@
-footer {
+.footer__lists {
   display: flex;
   justify-content: space-between;
-  padding: 3vw 6vw;
+  padding: 3vw 6vw 2vw;
 
   @media (max-width: $mobile) {
     flex-direction: column;
-    margin-bottom: 20vw;
+    margin-bottom: 10vw;
   }
 
   .list {
@@ -73,6 +73,15 @@ footer {
 }
 
 .footer__scroll-to-top {
-  cursor: pointer;
-  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vw;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 10vw;
+  }
+
+  svg {
+    cursor: pointer;
+  }
 }
