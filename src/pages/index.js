@@ -60,9 +60,7 @@ function Home({ data }) {
       <SEO title="Home" />
       <Hero openingHours={openingHours} dimensions={dimensions} />
       <section className="statement">
-        <span>
-          Roam freely and find inspiration...
-        </span>
+        <span>Roam freely and find inspiration...</span>
         <span>or that obscure pasta shape that you've</span>
         <span>been looking for</span>
       </section>

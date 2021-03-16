@@ -135,8 +135,6 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 3vw;
-  color: $white;
-  cursor: pointer;
 
   @media (max-width: $mobile) {
     width: 10vw;

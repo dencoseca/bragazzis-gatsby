@@ -6,7 +6,6 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion"
-import { Link as ScrollToLink } from "react-scroll"
 
 // Animations
 const smoothTransition = {
@@ -45,6 +44,22 @@ const contentVariants = {
   },
 }
 
+const downArrowVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: [0, 1, 0],
+    translateY: [-20, 0, 20],
+    transition: {
+      ...smoothTransition,
+      delay: 4,
+      duration: 3,
+      times: [0, 0.6, 1],
+    },
+  },
+}
+
 const titleVariants = {
   initial: {
     translateY: 400,
@@ -63,7 +78,7 @@ function Hero({ openingHours, dimensions: { vh } }) {
 
   return (
     <AnimatePresence>
-      <div className="hero">
+      <div className="hero" id="hero">
         <div className="hero__title-wrapper">
           <motion.div
             className="hero__title"
@@ -123,13 +138,13 @@ function Hero({ openingHours, dimensions: { vh } }) {
         </motion.div>
         <motion.svg
           className="hero__down-arrow"
-          variants={contentVariants}
+          variants={downArrowVariants}
           initial="initial"
           animate="animate"
           width="50"
           height="50"
           viewBox="0 0 50 50"
-          fill="none"
+          fill="#f6f4f1"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
