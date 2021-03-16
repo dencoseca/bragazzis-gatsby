@@ -6,6 +6,7 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion"
+import { Link as ScrollToLink } from "react-scroll"
 
 // Animations
 const smoothTransition = {
@@ -120,27 +121,24 @@ function Hero({ openingHours, dimensions: { vh } }) {
             </a>
           </div>
         </motion.div>
-        <motion.div
+        <motion.svg
           className="hero__down-arrow"
           variants={contentVariants}
           initial="initial"
           animate="animate"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM23.5858 38.5858L17 32L18.4142 30.5858L24 36.1716V9H26V36.1716L31.5858 30.5858L33 32L26.4142 38.5858L26 39L25 40L24 39L23.5858 38.5858Z"
-              fill="#f6f4f1"
-            />
-          </svg>
-        </motion.div>
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM23.5858 38.5858L17 32L18.4142 30.5858L24 36.1716V9H26V36.1716L31.5858 30.5858L33 32L26.4142 38.5858L26 39L25 40L24 39L23.5858 38.5858Z"
+            fill="#f6f4f1"
+          />
+        </motion.svg>
       </div>
     </AnimatePresence>
   )
