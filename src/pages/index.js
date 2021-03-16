@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
-import "../styles/styles.scss"
 import Hero from "../components/Hero"
 import FloatingItems from "../components/FloatingItems"
 import Footer from "../components/Footer"
