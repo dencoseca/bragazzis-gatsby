@@ -72,7 +72,7 @@ const titleVariants = {
   },
 }
 
-function Cover({ openingHours, dimensions: { vh } }) {
+function Cover({ openingHours, dimensions: { width, vh } }) {
   const { scrollYProgress } = useViewportScroll()
   const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, vh * 59])
 
@@ -99,7 +99,7 @@ function Cover({ openingHours, dimensions: { vh } }) {
           <motion.div
             className="cover__image-inner"
             style={{
-              translateY: window.innerWidth >= 768 ? heroImageScroll : 0,
+              translateY: width >= 768 ? heroImageScroll : 0,
             }}
           >
             <StaticImage
