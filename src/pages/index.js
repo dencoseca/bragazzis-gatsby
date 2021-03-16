@@ -1,7 +1,6 @@
-import * as React from "react"
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
-import Hero from "../components/Hero"
+import Cover from "../components/Cover"
 import FloatingItems from "../components/FloatingItems"
 import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
@@ -58,7 +57,7 @@ function Home({ data }) {
   return (
     <>
       <SEO title="Home" />
-      <Hero openingHours={openingHours} dimensions={dimensions} />
+      <Cover openingHours={openingHours} dimensions={dimensions} />
       <section className="statement">
         <span>Roam freely and find inspiration...</span>
         <span>or that obscure pasta shape that you've</span>

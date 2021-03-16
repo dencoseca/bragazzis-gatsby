@@ -72,7 +72,7 @@ const titleVariants = {
   },
 }
 
-function Hero({ openingHours, dimensions: { vh } }) {
+function Cover({ openingHours, dimensions: { vh } }) {
   const { scrollYProgress } = useViewportScroll()
   const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, vh * 59])
 
@@ -159,4 +159,4 @@ function Hero({ openingHours, dimensions: { vh } }) {
   )
 }
 
-export default Hero
+export default Cover
