@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
-import Hero from "../components/Hero"
-import FloatingItems from "../components/FloatingItems"
-import Footer from "../components/Footer"
-import FullWidthBanner from "../components/FullWidthBanner"
-import SEO from "../components/SEO"
+import Hero from "../components/Hero.js"
+import FloatingItems from "../components/FloatingItems.js"
+import Footer from "../components/Footer.js"
+import FullWidthBanner from "../components/FullWidthBanner.js"
+import SEO from "../components/SEO.js"
 
 // Setup debounce function for window resize
 function debounce(fn, ms) {
