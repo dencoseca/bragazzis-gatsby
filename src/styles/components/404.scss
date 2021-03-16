@@ -16,22 +16,39 @@
   }
 
   .logo {
-    font-family: "Abril Fatface", cursive;
+    font-family: $displayFont;
     font-size: 3rem;
     position: absolute;
     top: 5vh;
     top: calc(var(--vh, 1vh) * 5);
+
+    @media (max-width: $mobile) {
+      font-size: 2rem;
+    }
   }
 
   h1 {
     font-size: 6rem;
-    font-family: "Abril Fatface", cursive;
-    letter-spacing: 0.3rem;
+    font-family: $displayFont;
+    letter-spacing: 0.4rem;
     margin-bottom: 2rem;
+
+    @media (max-width: $mobile) {
+      font-size: 4rem;
+      letter-spacing: 0.2rem;
+    }
   }
 
   p {
     font-size: 2rem;
     font-weight: 200;
+
+    @media (max-width: $mobile) {
+      font-size: 0.875rem;
+    }
+  }
+
+  .back-button {
+    transform: scale(0.8);
   }
 }

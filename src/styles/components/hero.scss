@@ -6,7 +6,7 @@
 }
 
 .hero__title-wrapper {
-  font-family: "Abril Fatface", cursive;
+  font-family: $displayFont;
   position: absolute;
   left: 50%;
   top: 10%;
@@ -16,7 +16,7 @@
   z-index: 2;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     top: 10vh;
     top: calc(var(--vh, 1vh) * 10);
   }
@@ -94,7 +94,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     font-size: 3vw;
     line-height: 2.5vw;
     text-align: center;
@@ -137,7 +137,7 @@
   bottom: 3vw;
   color: $white;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     width: 10vw;
   }
 }

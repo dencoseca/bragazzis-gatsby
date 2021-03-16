@@ -19,7 +19,7 @@
 
 body,
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: $textFont;
   /* Adjust font size */
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -39,16 +39,16 @@ html {
   align-items: center;
   flex-direction: column;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     margin-top: 6vw;
   }
 
   span {
-    font-family: "Abril Fatface", cursive;
+    font-family: $displayFont;
     font-size: 3vw;
     margin-bottom: 0.6vw;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       font-size: 4vw;
     }
   }
@@ -62,16 +62,16 @@ html {
   align-items: center;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     height: 90vw;
   }
 
   h3 {
-    font-family: "Abril Fatface", cursive;
+    font-family: $displayFont;
     font-size: 3vw;
     margin-bottom: 2vw;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       font-size: 4vw;
     }
   }
@@ -83,7 +83,7 @@ html {
     line-height: 1.5vw;
     margin: 1vw 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       font-size: 3vw;
       line-height: 4vw;
       max-width: 80vw;
