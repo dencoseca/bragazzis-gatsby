@@ -7,7 +7,7 @@ import {
   useViewportScroll,
 } from "framer-motion"
 
-function FullWidthBanner({ dimensions: { vh } }) {
+function FullWidthBanner({ dimensions: { width, vh } }) {
   const { scrollYProgress } = useViewportScroll()
   const textScroll = useTransform(scrollYProgress, [0.7, 1], [vh * -2, vh * 6])
 
@@ -23,7 +23,7 @@ function FullWidthBanner({ dimensions: { vh } }) {
         <motion.article
           className="full-width-banner__text"
           style={{
-            translateY: window.innerWidth >= 768 ? textScroll : 0,
+            translateY: width >= 768 ? textScroll : 0,
             translateX: "-50%",
           }}
         >
