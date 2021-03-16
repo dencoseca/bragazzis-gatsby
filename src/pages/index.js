@@ -29,18 +29,22 @@ function Home({ data }) {
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
+    vh: window.innerHeight / 100,
+    vw: window.innerWidth / 100,
   })
 
   useEffect(() => {
     // Grab inner height of window
-    let vh = dimensions.height * 0.01
+    let calculatedVh = dimensions.height * 0.01
     // Set css variable vh
-    document.documentElement.style.setProperty("--vh", `${vh}px`)
+    document.documentElement.style.setProperty("--vh", `${calculatedVh}px`)
 
     const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
+        vh: window.innerHeight / 100,
+        vw: window.innerWidth / 100,
       })
     }, 1000)
 

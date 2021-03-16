@@ -7,8 +7,7 @@ import {
   useViewportScroll,
 } from "framer-motion"
 
-function FloatingItems({ dimensions }) {
-  const vw = dimensions.width / 100
+function FloatingItems({ dimensions: { vw } }) {
   const { scrollYProgress } = useViewportScroll()
   let item1Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -59])
   let item2Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -118])
@@ -27,7 +26,6 @@ function FloatingItems({ dimensions }) {
               className="item__image"
               src="../images/sandwiches.jpg"
               alt="delicious focaccia sandwiches"
-              loading="eager"
             />
           </div>
           <div className="item__text">
@@ -60,7 +58,6 @@ function FloatingItems({ dimensions }) {
               className="item__image"
               src="../images/coffee-pour.jpg"
               alt="silky coffee being poured"
-              loading="eager"
             />
           </div>
           <div className="item__text">
@@ -83,7 +80,6 @@ function FloatingItems({ dimensions }) {
               className="item__image"
               src="../images/salad.jpg"
               alt="fresh salad being plated"
-              loading="eager"
             />
           </div>
           <div className="item__text">
@@ -104,7 +100,6 @@ function FloatingItems({ dimensions }) {
               className="item__image"
               src="../images/shop.jpg"
               alt="a beautifully stocked italian dry goods shop"
-              loading="eager"
             />
           </div>
           <div className="item__text">

@@ -7,8 +7,7 @@ import {
   useViewportScroll,
 } from "framer-motion"
 
-function FullWidthBanner({ dimensions }) {
-  const vh = dimensions.height / 100
+function FullWidthBanner({ dimensions: { vh } }) {
   const { scrollYProgress } = useViewportScroll()
   const textScroll = useTransform(scrollYProgress, [0.7, 1], [vh * -2, vh * 6])
 
@@ -20,7 +19,6 @@ function FullWidthBanner({ dimensions }) {
           src="../images/egg.jpg"
           alt="a gigantic italian chocolate easter egg"
           layout="fullWidth"
-          loading="eager"
         />
         <motion.article
           className="full-width-banner__text"
