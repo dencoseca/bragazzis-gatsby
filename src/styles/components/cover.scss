@@ -1,11 +1,11 @@
-.hero {
+.cover {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   text-shadow: $textShadowColor 0px 1px 1px;
 }
 
-.hero__title-wrapper {
+.cover__title-wrapper {
   font-family: $displayFont;
   position: absolute;
   left: 50%;
@@ -22,7 +22,7 @@
   }
 }
 
-.hero__loading {
+.cover__loading {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -30,7 +30,7 @@
   background-color: $black;
 }
 
-.hero__image-wrapper {
+.cover__image-wrapper {
   height: 100%;
   width: 100%;
   z-index: -2;
@@ -38,18 +38,18 @@
   overflow: hidden;
 }
 
-.hero__image-inner {
+.cover__image-inner {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-.hero__image {
+.cover__image {
   height: 100%;
   object-fit: cover;
 }
 
-.hero__content {
+.cover__content {
   height: 100%;
   width: 100%;
   position: relative;
@@ -130,7 +130,7 @@
   }
 }
 
-.hero__down-arrow {
+.cover__down-arrow {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

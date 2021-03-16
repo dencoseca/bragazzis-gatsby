@@ -78,10 +78,10 @@ function Cover({ openingHours, dimensions: { vh } }) {
 
   return (
     <AnimatePresence>
-      <div className="hero" id="hero">
-        <div className="hero__title-wrapper">
+      <div className="cover" id="cover">
+        <div className="cover__title-wrapper">
           <motion.div
-            className="hero__title"
+            className="cover__title"
             variants={titleVariants}
             initial="initial"
             animate="animate"
@@ -89,21 +89,21 @@ function Cover({ openingHours, dimensions: { vh } }) {
             BRAGAZZI'S
           </motion.div>
         </div>
-        <div className="hero__image-wrapper">
+        <div className="cover__image-wrapper">
           <motion.div
-            className="hero__loading"
+            className="cover__loading"
             variants={loadingVariants}
             initial="initial"
             animate="animate"
           ></motion.div>
           <motion.div
-            className="hero__image-inner"
+            className="cover__image-inner"
             style={{
               translateY: window.innerWidth >= 768 ? heroImageScroll : 0,
             }}
           >
             <StaticImage
-              className="hero__image"
+              className="cover__image"
               src="../images/cafe-view.jpg"
               alt="espresso pour"
               layout="fullWidth"
@@ -113,7 +113,7 @@ function Cover({ openingHours, dimensions: { vh } }) {
           </motion.div>
         </div>
         <motion.div
-          className="hero__content"
+          className="cover__content"
           variants={contentVariants}
           initial="initial"
           animate="animate"
@@ -137,7 +137,7 @@ function Cover({ openingHours, dimensions: { vh } }) {
           </div>
         </motion.div>
         <motion.svg
-          className="hero__down-arrow"
+          className="cover__down-arrow"
           variants={downArrowVariants}
           initial="initial"
           animate="animate"

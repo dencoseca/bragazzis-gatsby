@@ -97,7 +97,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer__scroll-to-top">
-        <ScrollToLink to="hero" spy={true} smooth={true} duration={1000}>
+        <ScrollToLink to="cover" spy={true} smooth={true} duration={1000}>
           <svg
             className="footer__scroll-to-top"
             width="52"
