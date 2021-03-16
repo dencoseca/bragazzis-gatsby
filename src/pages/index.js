@@ -21,7 +21,12 @@ function debounce(fn, ms) {
 function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
-  const [dimensions, setDimensions] = useState(null)
+  const [dimensions, setDimensions] = useState({
+    height: 100,
+    width: 100,
+    vh: 100,
+    vw: 100,
+  })
 
   // =========================================
   // Set new vh in css when window is resized
