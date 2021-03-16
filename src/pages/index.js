@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
 import SEO from "../components/SEO"
 
-// Setup debounce function for window resize
+// Setup debounce function for use in useEffect
 function debounce(fn, ms) {
   let timer
   return () => {
@@ -21,17 +21,23 @@ function debounce(fn, ms) {
 function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
+  const [dimensions, setDimensions] = useState(null)
 
   // =========================================
   // Set new vh in css when window is resized
   // =========================================
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    vh: window.innerHeight / 100,
-    vw: window.innerWidth / 100,
-  })
 
+  // Set first when component loads
+  useEffect(() => {
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+      vh: window.innerHeight / 100,
+      vw: window.innerWidth / 100,
+    })
+  }, [])
+
+  // Set whenever the window is resized after a delay
   useEffect(() => {
     // Grab inner height of window
     let calculatedVh = dimensions.height * 0.01
