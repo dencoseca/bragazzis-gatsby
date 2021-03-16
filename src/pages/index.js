@@ -61,7 +61,7 @@ function Home({ data }) {
         <span>been looking for</span>
       </section>
       <FloatingItems dimensions={dimensions} />
-      <FullWidthBanner />
+      <FullWidthBanner dimensions={dimensions} />
       <section className="covid-notice">
         <h3>Covid Restrictions</h3>
         <p>

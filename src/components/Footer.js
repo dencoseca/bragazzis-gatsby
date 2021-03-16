@@ -8,6 +8,7 @@ function Footer() {
         <ul>
           <li>
             <a
+              className="text-link"
               href="https://goo.gl/maps/n4uLGJGtaqSjSfoo6"
               target="_blank"
               rel="noreferrer"
@@ -18,10 +19,14 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="mailto:info@braazzis.co.uk">info@bragazzis.co.uk</a>
+            <a className="text-link" href="mailto:info@braazzis.co.uk">
+              info@bragazzis.co.uk
+            </a>
           </li>
           <li>
-            <a href="tel:+441142581483">0114 258 1483</a>
+            <a className="text-link" href="tel:+441142581483">
+              0114 258 1483
+            </a>
           </li>
         </ul>
       </div>
@@ -32,6 +37,7 @@ function Footer() {
           <li>
             photography by{" "}
             <a
+              className="text-link"
               href="https://www.maytreephotography.co.uk"
               target="_blank"
               rel="noreferrer"
@@ -41,7 +47,12 @@ function Footer() {
           </li>
           <li>
             site by{" "}
-            <a href="https://leonbrown.dev" target="_blank" rel="noreferrer">
+            <a
+              className="text-link"
+              href="https://leonbrown.dev"
+              target="_blank"
+              rel="noreferrer"
+            >
               LEON BROWN
             </a>
           </li>
@@ -52,6 +63,7 @@ function Footer() {
         <ul>
           <li>
             <a
+              className="text-link"
               href="https://www.facebook.com/bragazzis/"
               target="_blank"
               rel="noreferrer"
@@ -61,6 +73,7 @@ function Footer() {
           </li>
           <li>
             <a
+              className="text-link"
               href="https://www.instagram.com/bragazzis/"
               target="_blank"
               rel="noreferrer"
@@ -70,6 +83,7 @@ function Footer() {
           </li>
           <li>
             <a
+              className="text-link"
               href="https://www.tripadvisor.co.uk/Restaurant_Review-g186364-d3435970-Reviews-Bragazzis-Sheffield_South_Yorkshire_England.html"
               target="_blank"
               rel="noreferrer"
