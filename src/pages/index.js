@@ -22,8 +22,8 @@ function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
   const [dimensions, setDimensions] = useState({
-    height: 100,
-    width: 100,
+    height: 1200,
+    width: 1980,
     vh: 100,
     vw: 100,
   })
