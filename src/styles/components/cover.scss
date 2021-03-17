@@ -3,6 +3,10 @@
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   text-shadow: $textShadowColor 0px 1px 1px;
+
+  @media (max-width: $mobile) {
+    max-height: 812px;
+  }
 }
 
 .cover__title-wrapper {
@@ -17,8 +21,7 @@
   overflow: hidden;
 
   @media (max-width: $mobile) {
-    top: 10vh;
-    top: calc(var(--vh, 1vh) * 10);
+    top: 10%;
   }
 }
 
@@ -104,8 +107,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        top: 3vh;
-        top: calc(var(--vh, 1vh) * 3);
+        top: 5%;
       }
 
       &.right {
@@ -116,15 +118,13 @@
     .opening-hours {
       left: 50%;
       transform: translateX(-50%);
-      top: 60vh;
-      top: calc(var(--vh, 1vh) * 60);
+      top: 60%;
     }
 
     .address {
       left: 50%;
       transform: translateX(-50%);
-      top: 20vh;
-      top: calc(var(--vh, 1vh) * 20);
+      top: 20%;
       text-align: center;
     }
   }
