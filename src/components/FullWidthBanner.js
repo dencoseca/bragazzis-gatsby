@@ -19,6 +19,7 @@ function FullWidthBanner({ dimensions: { width, vh } }) {
           src="../images/egg.jpg"
           alt="a gigantic italian chocolate easter egg"
           layout="fullWidth"
+          loading="eager"
         />
         <motion.article
           className="full-width-banner__text"

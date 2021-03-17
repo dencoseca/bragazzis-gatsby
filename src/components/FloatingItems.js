@@ -26,6 +26,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
               className="item__image"
               src="../images/sandwiches.jpg"
               alt="delicious focaccia sandwiches"
+              loading="eager"
             />
           </div>
           <div className="item__text">
@@ -58,6 +59,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
               className="item__image"
               src="../images/coffee-pour.jpg"
               alt="silky coffee being poured"
+              loading="eager"
             />
           </div>
           <div className="item__text">
@@ -80,6 +82,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
               className="item__image"
               src="../images/salad.jpg"
               alt="fresh salad being plated"
+              loading="eager"
             />
           </div>
           <div className="item__text">
@@ -100,6 +103,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
               className="item__image"
               src="../images/shop.jpg"
               alt="a beautifully stocked italian dry goods shop"
+              loading="eager"
             />
           </div>
           <div className="item__text">
