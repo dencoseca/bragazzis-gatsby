@@ -31,7 +31,7 @@ module.exports = {
         icon_options: {
           purpose: `any maskable`,
         },
-        lang: "en-UK",
+        lang: "en",
       },
     },
     `gatsby-plugin-sass`,
