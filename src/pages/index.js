@@ -6,6 +6,17 @@ import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
 import SEO from "../components/SEO"
 
+function debounce(fn, ms) {
+  let timer
+  return () => {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  }
+}
+
 function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
@@ -20,7 +31,6 @@ function Home({ data }) {
     // Prevent flashing
     document.querySelector("main").classList.add("visible")
 
-    // set dimensions to pass down to components
     setDimensions({
       height: window.innerHeight,
       width: window.innerWidth,
@@ -31,10 +41,27 @@ function Home({ data }) {
 
   useEffect(() => {
     // Grab inner height of window
-    let calculatedVh = dimensions.height * 0.01
+    let vh = dimensions.height * 0.01
     // Set css variable vh
-    document.documentElement.style.setProperty("--vh", `${calculatedVh}px`)
-  }, [dimensions.height])
+    document.documentElement.style.setProperty("--vh", `${vh}px`)
+
+    if (dimensions.width >= 768) {
+      const debouncedHandleResize = debounce(function handleResize() {
+        setDimensions({
+          height: window.innerHeight,
+          width: window.innerWidth,
+          vh: window.innerHeight / 100,
+          vw: window.innerWidth / 100,
+        })
+      }, 1000)
+
+      window.addEventListener("resize", debouncedHandleResize)
+
+      return () => {
+        window.removeEventListener("resize", debouncedHandleResize)
+      }
+    }
+  }, [dimensions])
 
   return (
     <>
