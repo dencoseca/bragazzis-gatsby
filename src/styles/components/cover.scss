@@ -5,7 +5,7 @@
   text-shadow: $textShadowColor 0px 1px 1px;
 
   @media (max-width: $mobile) {
-    max-height: 812px;
+    max-height: 900px;
   }
 }
 
@@ -98,8 +98,8 @@
   }
 
   @media (max-width: $mobile) {
-    font-size: 3vw;
-    line-height: 2.5vw;
+    font-size: 3.4vw;
+    line-height: 2.9vw;
     text-align: center;
 
     .tag {
@@ -119,12 +119,13 @@
       left: 50%;
       transform: translateX(-50%);
       top: 60%;
+      width: 100%;
     }
 
     .address {
       left: 50%;
       transform: translateX(-50%);
-      top: 20%;
+      top: 18%;
       text-align: center;
     }
   }
