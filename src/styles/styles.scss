@@ -30,6 +30,16 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+// Prevent flashing by making 'main' element hidden until after page is loaded
+
+main {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
 .text-link {
   position: relative;
   display: inline-block;
