@@ -18,6 +18,18 @@ module.exports = {
     image: `src/images/big-b-square-icon.png`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Bragazzi's`,
+        short_name: `Bragazzi's`,
+        start_url: `/`,
+        background_color: `#f6f4f1`,
+        theme_color: `#1d1d1d`,
+        display: `standalone`,
+        icon: `src/images/big-b-square-icon.png`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
