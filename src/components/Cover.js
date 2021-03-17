@@ -26,7 +26,7 @@ const loadingVariants = {
     opacity: 0,
     transition: {
       ...smoothTransition,
-      delay: 2,
+      delay: 1.5,
     },
   },
 }
@@ -39,7 +39,7 @@ const contentVariants = {
     opacity: 1,
     transition: {
       ...smoothTransition,
-      delay: 2.5,
+      delay: 2,
     },
   },
 }
@@ -55,7 +55,7 @@ const downArrowVariants = {
     translateX: "-50%",
     transition: {
       ...smoothTransition,
-      delay: 4,
+      delay: 3,
       duration: 3,
       times: [0, 0.6, 1],
     },
@@ -70,6 +70,7 @@ const titleVariants = {
     translateY: 0,
     transition: {
       ...fastTransition,
+      delay: 0.3,
     },
   },
 }
