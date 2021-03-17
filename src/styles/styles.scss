@@ -28,6 +28,7 @@ html {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  color: $black;
 }
 
 // Prevent flashing by making 'main' element hidden until after page is loaded
@@ -43,6 +44,8 @@ main {
 .text-link {
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  color: $black;
 
   &:after {
     content: "";
@@ -116,6 +119,7 @@ main {
     max-width: 40vw;
     line-height: 1.5vw;
     margin: 1vw 0;
+    color: #000;
 
     @media (max-width: $mobile) {
       font-size: 3vw;
