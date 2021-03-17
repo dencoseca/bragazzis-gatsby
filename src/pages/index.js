@@ -6,18 +6,6 @@ import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
 import SEO from "../components/SEO"
 
-// Setup debounce function for use in useEffect
-function debounce(fn, ms) {
-  let timer
-  return () => {
-    clearTimeout(timer)
-    timer = setTimeout(() => {
-      timer = null
-      fn.apply(this, arguments)
-    }, ms)
-  }
-}
-
 function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
@@ -28,15 +16,11 @@ function Home({ data }) {
     vw: 100,
   })
 
-  // =========================================
-  // Set new vh in css when window is resized
-  // =========================================
-
-  // Set first when component loads
   useEffect(() => {
     // Prevent flashing
     document.querySelector("main").classList.add("visible")
 
+    // set dimensions to pass down to components
     setDimensions({
       height: window.innerHeight,
       width: window.innerWidth,
@@ -45,28 +29,12 @@ function Home({ data }) {
     })
   }, [])
 
-  // Set whenever the window is resized after a delay
   useEffect(() => {
     // Grab inner height of window
     let calculatedVh = dimensions.height * 0.01
     // Set css variable vh
     document.documentElement.style.setProperty("--vh", `${calculatedVh}px`)
-
-    const debouncedHandleResize = debounce(function handleResize() {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-        vh: window.innerHeight / 100,
-        vw: window.innerWidth / 100,
-      })
-    }, 1000)
-
-    window.addEventListener("resize", debouncedHandleResize)
-
-    return () => {
-      window.removeEventListener("resize", debouncedHandleResize)
-    }
-  }, [dimensions])
+  }, [dimensions.height])
 
   return (
     <>
