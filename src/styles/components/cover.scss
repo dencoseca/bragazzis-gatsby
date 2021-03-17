@@ -133,7 +133,7 @@
 .cover__down-arrow {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
   bottom: 3vw;
 
   @media (max-width: $mobile) {
