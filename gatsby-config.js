@@ -28,6 +28,9 @@ module.exports = {
         theme_color: `#1d1d1d`,
         display: `standalone`,
         icon: `src/images/big-b-square-icon.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-sass`,
