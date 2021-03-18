@@ -7,8 +7,8 @@ function pageNotFound() {
       <Link className="logo" to="/">
         BRAGAZZI'S
       </Link>
-      <h1>Ooops...</h1>
-      <p>Looks like that page doesn't exist!</p>
+      <h1 className="text--initial">Ooops...</h1>
+      <p className="text--md">Looks like that page doesn't exist!</p>
       <Link to="/">
         <svg
           className="back-button"

@@ -28,24 +28,26 @@
   }
 
   h1 {
-    font-size: 6rem;
-    font-family: $displayFont;
-    letter-spacing: 0.4rem;
-    margin-bottom: 2rem;
+    // font-size: 6rem;
+    // font-family: $displayFont;
+    // letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
 
     @media (max-width: $mobile) {
-      font-size: 4rem;
-      letter-spacing: 0.2rem;
+      // font-size: 4rem;
+      // letter-spacing: 0.2rem;
     }
   }
 
   p {
-    font-size: 2rem;
-    font-weight: 200;
+    margin-bottom: 10vh;
+    margin-bottom: calc(var(--vh, 1vh) * 10);
+    // font-size: 2rem;
+    // font-weight: 200;
 
-    @media (max-width: $mobile) {
-      font-size: 0.875rem;
-    }
+    // @media (max-width: $mobile) {
+    //   font-size: 0.875rem;
+    // }
   }
 
   .back-button {
