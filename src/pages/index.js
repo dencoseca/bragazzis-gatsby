@@ -69,30 +69,34 @@ function Home({ data }) {
       <main>
         <Cover openingHours={openingHours} dimensions={dimensions} />
         <section className="statement">
-          <span>Roam freely and find inspiration...</span>
-          <span>or that obscure pasta shape that you've</span>
-          <span>been looking for</span>
+          <span className="text--display">
+            Roam freely and find inspiration...
+          </span>
+          <span className="text--display">
+            or that obscure pasta shape that you've
+          </span>
+          <span className="text--display">been looking for</span>
         </section>
         <FloatingItems dimensions={dimensions} />
         <FullWidthBanner dimensions={dimensions} />
         <section className="covid-notice">
-          <h3>Covid Restrictions</h3>
-          <p>
+          <h3 className="text--display">Covid Restrictions</h3>
+          <p className="text--md">
             We want to reassure you that we are putting all measures in place to
             keep you and our team safe so that you can confidently enjoy your
             visit.
           </p>
-          <p>
+          <p className="text--md">
             We are following all government guidelines and working on practice
             measures within the shop. We have completed necessary risk
             assessments and all procedures which will be constantly reviewed and
             updated where necessary in line with government guidelines.
           </p>
-          <p>
+          <p className="text--md">
             We ask you to please use common sense to play your part keeping
             everyone safe. In return we will be doing the same for you.
           </p>
-          <p>
+          <p className="text--md">
             Due to the constantly changing nature of this guidance, we will be
             continuously reviewing our procedures related to capacity.
           </p>

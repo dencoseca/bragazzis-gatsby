@@ -31,18 +31,9 @@
 
     li {
       margin-bottom: 1vw;
-      font-size: 0.875vw;
-      font-weight: 200;
-      color: #000;
 
       @media (max-width: $mobile) {
-        font-size: 3.4vw;
         margin-bottom: 3.4vw;
-      }
-
-      a {
-        text-decoration: none;
-        color: $black;
       }
 
       p {

@@ -41,7 +41,50 @@ main {
   visibility: visible;
 }
 
-.text-link {
+.text--md {
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: $black;
+
+  @media (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.4vw;
+  }
+}
+
+.text--sm {
+  margin-bottom: 1vw;
+  font-size: 0.875vw;
+  font-weight: 300;
+  color: $black;
+
+  @media (max-width: $mobile) {
+    font-size: 3.4vw;
+  }
+}
+
+.text--display {
+  font-family: $displayFont;
+  font-size: 4vw;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    font-size: 6vw;
+  }
+}
+
+.text--initial {
+  font-family: $displayFont;
+  font-size: 6vw;
+  color: $black;
+
+  @media (max-width: $mobile) {
+    font-size: 8vw;
+  }
+}
+
+.text--link {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -82,12 +125,8 @@ main {
 
   span {
     font-family: $displayFont;
-    font-size: 3vw;
     margin-bottom: 0.6vw;
-
-    @media (max-width: $mobile) {
-      font-size: 5vw;
-    }
+    color: $black;
   }
 }
 
@@ -104,26 +143,15 @@ main {
   }
 
   h3 {
-    font-family: $displayFont;
-    font-size: 3vw;
     margin-bottom: 2vw;
-
-    @media (max-width: $mobile) {
-      font-size: 5vw;
-    }
+    color: $black;
   }
 
   p {
-    font-size: 1vw;
-    font-weight: 200;
     max-width: 40vw;
-    line-height: 1.5vw;
     margin: 1vw 0;
-    color: #000;
 
     @media (max-width: $mobile) {
-      font-size: 3.4vw;
-      line-height: 4.4vw;
       max-width: 85vw;
       margin: 2vw 0;
     }

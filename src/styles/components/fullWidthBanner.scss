@@ -11,22 +11,15 @@
 }
 
 .full-width-banner__text {
-  font-family: $displayFont;
   position: absolute;
   top: 40%;
   left: 50%;
   width: 100%;
 
   span {
-    font-size: 4vw;
-    text-align: center;
     color: $white;
     margin-bottom: 0.6vw;
     display: block;
-
-    @media (max-width: $mobile) {
-      font-size: 6vw;
-    }
   }
 }
 

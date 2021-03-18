@@ -8,9 +8,9 @@ function Footer() {
         <div className="list contact">
           <h4>Contact</h4>
           <ul>
-            <li>
+            <li className="text--sm">
               <a
-                className="text-link"
+                className="text--link"
                 href="https://goo.gl/maps/n4uLGJGtaqSjSfoo6"
                 target="_blank"
                 rel="noreferrer"
@@ -20,13 +20,13 @@ function Footer() {
                 <p>S7 1FL</p>
               </a>
             </li>
-            <li>
-              <a className="text-link" href="mailto:info@braazzis.co.uk">
+            <li className="text--sm">
+              <a className="text--link" href="mailto:info@braazzis.co.uk">
                 info@bragazzis.co.uk
               </a>
             </li>
-            <li>
-              <a className="text-link" href="tel:+441142581483">
+            <li className="text--sm">
+              <a className="text--link" href="tel:+441142581483">
                 0114 258 1483
               </a>
             </li>
@@ -35,11 +35,11 @@ function Footer() {
         <div className="list site">
           <h4>Site</h4>
           <ul>
-            <li>&copy; 2020 Bragazzi's Ltd</li>
-            <li>
+            <li className="text--sm">&copy; 2020 Bragazzi's Ltd</li>
+            <li className="text--sm">
               photography by{" "}
               <a
-                className="text-link"
+                className="text--link"
                 href="https://www.maytreephotography.co.uk"
                 target="_blank"
                 rel="noreferrer"
@@ -47,10 +47,10 @@ function Footer() {
                 maytree
               </a>
             </li>
-            <li>
+            <li className="text--sm">
               site by{" "}
               <a
-                className="text-link"
+                className="text--link"
                 href="https://leonbrown.dev"
                 target="_blank"
                 rel="noreferrer"
@@ -63,9 +63,9 @@ function Footer() {
         <div className="list social">
           <h4>Social</h4>
           <ul>
-            <li>
+            <li className="text--sm">
               <a
-                className="text-link"
+                className="text--link"
                 href="https://www.facebook.com/bragazzis/"
                 target="_blank"
                 rel="noreferrer"
@@ -73,9 +73,9 @@ function Footer() {
                 Facebook
               </a>
             </li>
-            <li>
+            <li className="text--sm">
               <a
-                className="text-link"
+                className="text--link"
                 href="https://www.instagram.com/bragazzis/"
                 target="_blank"
                 rel="noreferrer"
@@ -83,9 +83,9 @@ function Footer() {
                 Instagram
               </a>
             </li>
-            <li>
+            <li className="text--sm">
               <a
-                className="text-link"
+                className="text--link"
                 href="https://www.tripadvisor.co.uk/Restaurant_Review-g186364-d3435970-Reviews-Bragazzis-Sheffield_South_Yorkshire_England.html"
                 target="_blank"
                 rel="noreferrer"
