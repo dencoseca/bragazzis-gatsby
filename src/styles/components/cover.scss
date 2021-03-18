@@ -1,3 +1,7 @@
+// ===============
+// General Styles
+// ===============
+
 .cover {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -8,6 +12,29 @@
     max-height: 900px;
   }
 }
+
+.cover__image-wrapper {
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+  overflow: hidden;
+}
+
+.cover__image-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.cover__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+// ==================================
+// Pagr title and loading background 
+// ==================================
 
 .cover__title-wrapper {
   font-family: $displayFont;
@@ -33,24 +60,9 @@
   background-color: $black;
 }
 
-.cover__image-wrapper {
-  height: 100%;
-  width: 100%;
-  z-index: -2;
-  position: absolute;
-  overflow: hidden;
-}
-
-.cover__image-inner {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.cover__image {
-  height: 100%;
-  object-fit: cover;
-}
+// ==========================
+// Content and dynamic items
+// ==========================
 
 .cover__content {
   height: 100%;
@@ -62,6 +74,12 @@
   letter-spacing: 0.05vw;
   line-height: 0.95vw;
   z-index: 3;
+
+  @media (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 2.9vw;
+    text-align: center;
+  }
 
   .tag {
     position: absolute;
@@ -76,33 +94,8 @@
       right: 3vw;
       text-align: right;
     }
-  }
 
-  .opening-hours {
-    position: absolute;
-    left: 3vw;
-    bottom: 3vw;
-    font-weight: 500;
-  }
-
-  .address {
-    position: absolute;
-    right: 3vw;
-    bottom: 3vw;
-    text-align: right;
-
-    a {
-      color: $white;
-      text-decoration: none;
-    }
-  }
-
-  @media (max-width: $mobile) {
-    font-size: 3.4vw;
-    line-height: 2.9vw;
-    text-align: center;
-
-    .tag {
+    @media (max-width: $mobile) {
       &.left {
         left: 50%;
         transform: translateX(-50%);
@@ -114,19 +107,38 @@
         display: none;
       }
     }
+  }
 
-    .opening-hours {
+  .opening-hours {
+    position: absolute;
+    left: 3vw;
+    bottom: 3vw;
+    font-weight: 500;
+
+    @media (max-width: $mobile) {
       left: 50%;
       transform: translateX(-50%);
       top: 60%;
       width: 100%;
     }
+  }
 
-    .address {
+  .address {
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    text-align: right;
+
+    @media (max-width: $mobile) {
       left: 50%;
       transform: translateX(-50%);
       top: 18%;
       text-align: center;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
     }
   }
 }
