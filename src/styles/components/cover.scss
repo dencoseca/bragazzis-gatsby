@@ -44,7 +44,7 @@
   top: 10%;
   transform: translateX(-50%);
   color: $white;
-  font-size: 14vw;
+  font-size: 20vw;
   z-index: 2;
   overflow: hidden;
 
@@ -71,7 +71,7 @@
   position: relative;
   color: $white;
   font-size: 1vw;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.05vw;
   line-height: 0.95vw;
   z-index: 3;
@@ -114,7 +114,6 @@
     position: absolute;
     left: 3vw;
     bottom: 3vw;
-    font-weight: 500;
 
     @media (max-width: $mobile) {
       left: 50%;
@@ -131,7 +130,6 @@
     right: 3vw;
     bottom: 3vw;
     text-align: right;
-    font-weight: 500;
 
     @media (max-width: $mobile) {
       left: 50%;
