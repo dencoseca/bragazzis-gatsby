@@ -10,6 +10,7 @@
 
   @media (max-width: $mobile) {
     max-height: 900px;
+    margin-bottom: 65vw;
   }
 }
 
@@ -33,7 +34,7 @@
 }
 
 // ==================================
-// Pagr title and loading background 
+// Pagr title and loading background
 // ==================================
 
 .cover__title-wrapper {
@@ -48,7 +49,7 @@
   overflow: hidden;
 
   @media (max-width: $mobile) {
-    top: 10%;
+    top: 20vw;
   }
 }
 
@@ -100,7 +101,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        top: 5%;
+        top: 10vw;
       }
 
       &.right {
@@ -118,8 +119,10 @@
     @media (max-width: $mobile) {
       left: 50%;
       transform: translateX(-50%);
-      top: 60%;
       width: 100%;
+      bottom: -60vw;
+      color: $black;
+      text-shadow: none;
     }
   }
 
@@ -133,7 +136,7 @@
     @media (max-width: $mobile) {
       left: 50%;
       transform: translateX(-50%);
-      top: 18%;
+      top: 40vw;
       text-align: center;
     }
 
