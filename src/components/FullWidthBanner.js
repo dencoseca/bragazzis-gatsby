@@ -28,10 +28,21 @@ function FullWidthBanner({ dimensions: { width, vh } }) {
             translateX: "-50%",
           }}
         >
-          <span className="text--display">
-            Each season brings a selection of
-          </span>
-          <span className="text--display">well considered products</span>
+          {width >= 768 ? (
+            <>
+              <span className="text--display">
+                Each season brings a selection of
+              </span>
+              <span className="text--display">well considered products</span>
+            </>
+          ) : (
+            <>
+              <span className="text--display">Each season</span>
+              <span className="text--display">brings a selection</span>
+              <span className="text--display">of well considered</span>
+              <span className="text--display">goods</span>
+            </>
+          )}
         </motion.article>
       </section>
     </AnimatePresence>

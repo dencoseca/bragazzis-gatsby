@@ -9,7 +9,7 @@
   text-shadow: $textShadowColor 0px 1px 1px;
 
   @media (max-width: $mobile) {
-    margin-bottom: 60vw;
+    margin-bottom: 65vw;
   }
 }
 
@@ -49,6 +49,7 @@
 
   @media (max-width: $mobile) {
     top: 20vw;
+    font-size: 20vw;
   }
 }
 
@@ -119,10 +120,11 @@
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
-      bottom: -60vw;
+      bottom: -65vw;
       color: $black;
       text-shadow: none;
       font-weight: 300;
+      font-size: 3.5vw;
     }
   }
 
@@ -138,6 +140,7 @@
       transform: translateX(-50%);
       top: 40vw;
       text-align: center;
+      font-size: 3.5vw;
     }
 
     a {

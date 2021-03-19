@@ -71,13 +71,25 @@ function Home({ data }) {
       <main>
         <Cover openingHours={openingHours} dimensions={dimensions} />
         <section className="statement">
-          <span className="text--display">
-            Roam freely and find inspiration...
-          </span>
-          <span className="text--display">
-            or that obscure pasta shape that you've
-          </span>
-          <span className="text--display">been looking for</span>
+          {dimensions.width >= 768 ? (
+            <>
+              <span className="text--display">
+                Roam freely and find inspiration...
+              </span>
+              <span className="text--display">
+                or that obscure pasta shape that you've
+              </span>
+              <span className="text--display">been looking for</span>
+            </>
+          ) : (
+            <>
+              <span className="text--display">Roam freely</span>
+              <span className="text--display">and find inspiration...</span>
+              <span className="text--display">or that obscure pasta</span>
+              <span className="text--display">shape that you've</span>
+              <span className="text--display">been looking for</span>
+            </>
+          )}
         </section>
         <FloatingItems dimensions={dimensions} />
         <FullWidthBanner dimensions={dimensions} />
