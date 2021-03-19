@@ -1,16 +1,12 @@
-// ==================
-// 3rd party imports
-// ==================
+// ===============
+// Imports
+// ===============
 
 // Fonts
 @import "./typography.scss";
 
 // Reset
 @import "./normalize.scss";
-
-// =================
-// Internal imports
-// =================
 
 // Variables
 @import "./variables.scss";
@@ -74,7 +70,7 @@ main {
   color: $black;
 
   @media (max-width: $mobile) {
-    font-size: 3.4vw;
+    font-size: 3.2vw;
   }
 }
 
@@ -84,7 +80,7 @@ main {
   text-align: center;
 
   @media (max-width: $mobile) {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
@@ -125,12 +121,21 @@ main {
   }
 }
 
+.text--heading-sm {
+  font-family: $displayFont;
+  font-size: 1.3vw;
+
+  @media (max-width: $mobile) {
+    font-size: 4vw;
+  }
+}
+
 // ==================
 // Monior components
 // ==================
 
 .statement {
-  height: 40vw;
+  padding: 19vw 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +153,7 @@ main {
 }
 
 .covid-notice {
-  height: 40vw;
+  padding: 8vw 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +161,7 @@ main {
   text-align: center;
 
   @media (max-width: $mobile) {
-    height: 110vw;
+    padding: 20vw 0;
   }
 
   h3 {

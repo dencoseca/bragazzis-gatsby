@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <div className="footer__lists">
         <div className="list contact">
-          <h4>Contact</h4>
+          <h4 className="text--heading-sm">Contact</h4>
           <ul>
             <li className="text--sm">
               <a
@@ -33,7 +33,7 @@ function Footer() {
           </ul>
         </div>
         <div className="list site">
-          <h4>Site</h4>
+          <h4 className="text--heading-sm">Site</h4>
           <ul>
             <li className="text--sm">&copy; 2020 Bragazzi's Ltd</li>
             <li className="text--sm">
@@ -61,7 +61,7 @@ function Footer() {
           </ul>
         </div>
         <div className="list social">
-          <h4>Social</h4>
+          <h4 className="text--heading-sm">Social</h4>
           <ul>
             <li className="text--sm">
               <a

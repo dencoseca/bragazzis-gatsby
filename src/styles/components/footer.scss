@@ -16,15 +16,6 @@
     }
   }
 
-  h4 {
-    font-family: $displayFont;
-    font-size: 1.1vw;
-
-    @media (max-width: $mobile) {
-      font-size: 5vw;
-    }
-  }
-
   ul {
     list-style: none;
     padding: 0;
