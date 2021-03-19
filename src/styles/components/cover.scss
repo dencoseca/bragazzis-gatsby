@@ -9,7 +9,6 @@
   text-shadow: $textShadowColor 0px 1px 1px;
 
   @media (max-width: $mobile) {
-    max-height: 900px;
     margin-bottom: 60vw;
   }
 }
@@ -122,6 +121,7 @@
       bottom: -60vw;
       color: $black;
       text-shadow: none;
+      font-weight: 300;
     }
   }
 
