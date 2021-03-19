@@ -51,6 +51,17 @@ main {
 // Global text classes
 // ====================
 
+.text--sm {
+  margin-bottom: 1vw;
+  font-size: 0.875vw;
+  font-weight: 300;
+  color: $black;
+
+  @media (max-width: $mobile) {
+    font-size: 3.2vw;
+  }
+}
+
 .text--md {
   font-weight: 300;
   font-size: 1vw;
@@ -60,17 +71,6 @@ main {
   @media (max-width: $mobile) {
     font-size: 3.4vw;
     line-height: 4.4vw;
-  }
-}
-
-.text--sm {
-  margin-bottom: 1vw;
-  font-size: 0.875vw;
-  font-weight: 300;
-  color: $black;
-
-  @media (max-width: $mobile) {
-    font-size: 3.2vw;
   }
 }
 

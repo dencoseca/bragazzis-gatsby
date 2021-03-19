@@ -3,8 +3,15 @@
 // ===============
 
 @font-face {
-  font-family: "Abril Fatface";
-  src: url("../fonts/AbrilFatface-Regular.ttf");
+  font-family: "Bigillia";
+  src: url("../fonts/Bigilla.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bigillia Bold";
+  src: url("../fonts/Bigilla-Bold.otf");
+  font-weight: bold;
   font-display: swap;
 }
 
@@ -13,43 +20,50 @@
 // ===============
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Thin.ttf");
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Thin.ttf");
   font-weight: 100;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.ttf");
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-ExtraLight.ttf");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Light.ttf");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Regular.ttf");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.ttf");
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Medium.ttf");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.ttf");
-  font-weight: 700;
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-SemiBold.ttf");
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Black.ttf");
-  font-weight: 900;
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Bold.ttf");
+  font-weight: 700;
   font-display: swap;
 }
