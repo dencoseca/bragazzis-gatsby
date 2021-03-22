@@ -19,7 +19,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
       <section className="floating-items">
         <motion.article
           className="item item--1"
-          style={{ translateY: width >= 768 ? item1Scroll : 0 }}
+          style={{ translateY: width >= 760 ? item1Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -52,7 +52,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
         </motion.article>
         <motion.article
           className="item item--2"
-          style={{ translateY: width >= 768 ? item2Scroll : 0 }}
+          style={{ translateY: width >= 760 ? item2Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -75,7 +75,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
         </motion.article>
         <motion.article
           className="item item--3"
-          style={{ translateY: width >= 768 ? item3Scroll : 0 }}
+          style={{ translateY: width >= 760 ? item3Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -96,7 +96,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
         </motion.article>
         <motion.article
           className="item item--4"
-          style={{ translateY: width >= 768 ? item4Scroll : 0 }}
+          style={{ translateY: width >= 760 ? item4Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage

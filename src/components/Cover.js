@@ -102,7 +102,7 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
           <motion.div
             className="cover__image-inner"
             style={{
-              translateY: width >= 768 ? heroImageScroll : 0,
+              translateY: width >= 760 ? heroImageScroll : 0,
             }}
           >
             <StaticImage

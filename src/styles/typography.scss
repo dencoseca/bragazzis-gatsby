@@ -121,11 +121,11 @@
 
 .text--display {
   font-family: $displayFont;
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
 
   @media (max-width: $mobile) {
-    font-size: 10vw;
+    font-size: 8.5vw;
   }
 }
 
@@ -141,10 +141,10 @@
 
 .text--heading-sm {
   font-family: $displayFont;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 
   @media (max-width: $mobile) {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
 

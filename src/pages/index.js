@@ -47,7 +47,7 @@ function Home({ data }) {
     // Set css variable vh
     document.documentElement.style.setProperty("--vh", `${vh}px`)
 
-    if (dimensions.width >= 768) {
+    if (dimensions.width >= 760) {
       const debouncedHandleResize = debounce(function handleResize() {
         setDimensions({
           height: window.innerHeight,
@@ -71,7 +71,7 @@ function Home({ data }) {
       <main>
         <Cover openingHours={openingHours} dimensions={dimensions} />
         <section className="statement">
-          {dimensions.width >= 768 ? (
+          {dimensions.width >= 760 ? (
             <>
               <span className="text--display">
                 Roam freely and find inspiration...

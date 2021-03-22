@@ -24,11 +24,11 @@ function FullWidthBanner({ dimensions: { width, vh } }) {
         <motion.article
           className="full-width-banner__text"
           style={{
-            translateY: width >= 768 ? textScroll : 0,
+            translateY: width >= 760 ? textScroll : 0,
             translateX: "-50%",
           }}
         >
-          {width >= 768 ? (
+          {width >= 760 ? (
             <>
               <span className="text--display">
                 Each season brings a selection of
