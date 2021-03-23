@@ -7,7 +7,10 @@ import {
   useViewportScroll,
 } from "framer-motion"
 
-function FloatingItems({ dimensions: { width, vw } }) {
+function FloatingItems({
+  dimensions: { width, vw },
+  breakpoints: { mobile, tablet },
+}) {
   const { scrollYProgress } = useViewportScroll()
   let item1Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -59])
   let item2Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -118])
@@ -19,7 +22,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
       <section className="floating-items">
         <motion.article
           className="item item--1"
-          style={{ translateY: width >= 760 ? item1Scroll : 0 }}
+          style={{ translateY: width >= mobile ? item1Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -52,7 +55,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
         </motion.article>
         <motion.article
           className="item item--2"
-          style={{ translateY: width >= 760 ? item2Scroll : 0 }}
+          style={{ translateY: width >= mobile ? item2Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -75,7 +78,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
         </motion.article>
         <motion.article
           className="item item--3"
-          style={{ translateY: width >= 760 ? item3Scroll : 0 }}
+          style={{ translateY: width >= mobile ? item3Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage
@@ -96,7 +99,7 @@ function FloatingItems({ dimensions: { width, vw } }) {
         </motion.article>
         <motion.article
           className="item item--4"
-          style={{ translateY: width >= 760 ? item4Scroll : 0 }}
+          style={{ translateY: width >= mobile ? item4Scroll : 0 }}
         >
           <div className="item__image-wrapper">
             <StaticImage

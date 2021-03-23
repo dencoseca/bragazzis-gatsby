@@ -22,6 +22,10 @@ function debounce(fn, ms) {
 function Home({ data }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
+  const breakpoints = {
+    mobile: 760,
+    tablet: 1080,
+  }
   const [dimensions, setDimensions] = useState({
     height: 1200,
     width: 1980,
@@ -91,8 +95,8 @@ function Home({ data }) {
             </>
           )}
         </section>
-        <FloatingItems dimensions={dimensions} />
-        <FullWidthBanner dimensions={dimensions} />
+        <FloatingItems dimensions={dimensions} breakpoints={breakpoints} />
+        <FullWidthBanner dimensions={dimensions} breakpoints={breakpoints} />
         <section className="covid-notice">
           <span className="text--display">Covid Restrictions</span>
           <p className="text--md">

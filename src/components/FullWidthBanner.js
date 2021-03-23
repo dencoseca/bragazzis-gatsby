@@ -7,7 +7,10 @@ import {
   useViewportScroll,
 } from "framer-motion"
 
-function FullWidthBanner({ dimensions: { width, vh } }) {
+function FullWidthBanner({
+  dimensions: { width, vh },
+  breakpoints: { mobile, tablet },
+}) {
   const { scrollYProgress } = useViewportScroll()
   const textScrollLaptop = useTransform(
     scrollYProgress,
@@ -34,9 +37,9 @@ function FullWidthBanner({ dimensions: { width, vh } }) {
           className="full-width-banner__text"
           style={{
             translateY:
-              width >= 1080
+              width >= tablet
                 ? textScrollLaptop
-                : width >= 760
+                : width >= mobile
                 ? textScrollTablet
                 : 0,
             translateX: "-50%",
