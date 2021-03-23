@@ -67,7 +67,7 @@ function Home({ data }) {
         window.removeEventListener("resize", debouncedHandleResize)
       }
     }
-  }, [dimensions])
+  }, [dimensions, breakpoints.mobile])
 
   return (
     <>
