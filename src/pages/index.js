@@ -94,7 +94,7 @@ function Home({ data }) {
         <FloatingItems dimensions={dimensions} />
         <FullWidthBanner dimensions={dimensions} />
         <section className="covid-notice">
-          <h3 className="text--display">Covid Restrictions</h3>
+          <span className="text--display">Covid Restrictions</span>
           <p className="text--md">
             We want to reassure you that we are putting all measures in place to
             keep you and our team safe so that you can confidently enjoy your

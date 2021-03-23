@@ -78,6 +78,10 @@ $textFont: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: $black;
 
+  @media (max-width: $tablet) {
+    font-size: 1.4vw;
+  }
+
   @media (max-width: $mobile) {
     font-size: 3.2vw;
   }
@@ -88,6 +92,11 @@ $textFont: "Josefin Sans", sans-serif;
   font-size: 1.2vw;
   line-height: 1.7vw;
   color: $black;
+
+  @media (max-width: $tablet) {
+    font-size: 1.6vw;
+    line-height: 2vw;
+  }
 
   @media (max-width: $mobile) {
     font-size: 4vw;

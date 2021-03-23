@@ -9,7 +9,16 @@ import {
 
 function FullWidthBanner({ dimensions: { width, vh } }) {
   const { scrollYProgress } = useViewportScroll()
-  const textScroll = useTransform(scrollYProgress, [0.7, 1], [vh * -2, vh * 6])
+  const textScrollLaptop = useTransform(
+    scrollYProgress,
+    [0.7, 1],
+    [vh * -2, vh * 6]
+  )
+  const textScrollTablet = useTransform(
+    scrollYProgress,
+    [0.7, 1],
+    [vh * -1, vh * 3]
+  )
 
   return (
     <AnimatePresence>
@@ -24,7 +33,12 @@ function FullWidthBanner({ dimensions: { width, vh } }) {
         <motion.article
           className="full-width-banner__text"
           style={{
-            translateY: width >= 760 ? textScroll : 0,
+            translateY:
+              width >= 1080
+                ? textScrollLaptop
+                : width >= 760
+                ? textScrollTablet
+                : 0,
             translateX: "-50%",
           }}
         >

@@ -60,6 +60,10 @@
   justify-content: center;
   margin-bottom: 3vw;
 
+  @media (max-width: $tablet) {
+    transform: scale(0.9);
+  }
+
   @media (max-width: $mobile) {
     margin-bottom: 10vw;
   }
