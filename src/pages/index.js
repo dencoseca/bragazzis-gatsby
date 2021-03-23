@@ -51,7 +51,7 @@ function Home({ data }) {
     // Set css variable vh
     document.documentElement.style.setProperty("--vh", `${vh}px`)
 
-    if (dimensions.width >= 760) {
+    if (dimensions.width >= breakpoints.mobile) {
       const debouncedHandleResize = debounce(function handleResize() {
         setDimensions({
           height: window.innerHeight,
