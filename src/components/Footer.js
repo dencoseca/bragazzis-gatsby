@@ -35,7 +35,7 @@ function Footer() {
         <div className="list site">
           <h4 className="text--heading-sm">Site</h4>
           <ul>
-            <li className="text--sm">&copy; 2020 Bragazzi's Ltd</li>
+            <li className="text--sm">&copy; 2021 Bragazzi's Ltd</li>
             <li className="text--sm">
               photography by{" "}
               <a
