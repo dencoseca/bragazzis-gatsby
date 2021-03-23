@@ -142,11 +142,20 @@
       top: 40vw;
       text-align: center;
       font-size: 3.5vw;
+      text-transform: uppercase;
+      width: 100%;
     }
 
     a {
       color: $white;
       text-decoration: none;
+
+      p {
+        @media (max-width: $mobile) {
+          margin: 2.5vw 0;
+          font-size: 3vw;
+        }
+      }
     }
   }
 }
