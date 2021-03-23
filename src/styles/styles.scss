@@ -59,7 +59,7 @@ main {
   flex-direction: column;
 
   @media (max-width: $mobile) {
-    margin-top: 6vw;
+    display: none;
   }
 
   span {
