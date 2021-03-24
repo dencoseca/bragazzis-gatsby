@@ -6,6 +6,7 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion"
+import { Link as ScrollToLink } from "react-scroll"
 
 // Animations
 const smoothTransition = {
@@ -13,22 +14,9 @@ const smoothTransition = {
   ease: [0.43, 0.13, 0.23, 0.96],
 }
 
-const fastTransition = {
-  duration: 1,
-  ease: [0.6, 0.01, -0.05, 0.9],
-}
-
-// const loadingVariants = {
-//   initial: {
-//     opacity: 1,
-//   },
-//   animate: {
-//     opacity: 0,
-//     transition: {
-//       ...smoothTransition,
-//       delay: 1.5,
-//     },
-//   },
+// const fastTransition = {
+//   duration: 1,
+//   ease: [0.6, 0.01, -0.05, 0.9],
 // }
 
 const contentVariants = {
@@ -38,7 +26,7 @@ const contentVariants = {
   animate: {
     opacity: 1,
     transition: {
-      ...fastTransition,
+      ...smoothTransition,
       delay: 2,
     },
   },
@@ -50,8 +38,8 @@ const downArrowVariants = {
     translateX: "-50%",
   },
   animate: {
-    opacity: [0, 1, 0],
-    translateY: [-20, 0, 20],
+    opacity: [0, 1, 1],
+    translateY: [-20, 0, 0],
     translateX: "-50%",
     transition: {
       ...smoothTransition,
@@ -93,12 +81,6 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
           </motion.div>
         </div>
         <div className="cover__image-wrapper">
-          {/* <motion.div
-            className="cover__loading"
-            variants={loadingVariants}
-            initial="initial"
-            animate="animate"
-          ></motion.div> */}
           <motion.div
             className="cover__image-inner"
             style={{
@@ -107,7 +89,7 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
           >
             <StaticImage
               className="cover__image"
-              src="../images/cafe-view.jpg"
+              src="../images/parmesan.jpg"
               alt="a busy Italian cafe"
               layout="fullWidth"
               loading="eager"
@@ -139,24 +121,26 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
             </a>
           </div>
         </motion.div>
-        <motion.svg
-          className="cover__down-arrow"
-          variants={downArrowVariants}
-          initial="initial"
-          animate="animate"
-          width="50"
-          height="50"
-          viewBox="0 0 50 50"
-          fill="#f6f4f1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM23.5858 38.5858L17 32L18.4142 30.5858L24 36.1716V9H26V36.1716L31.5858 30.5858L33 32L26.4142 38.5858L26 39L25 40L24 39L23.5858 38.5858Z"
+        <ScrollToLink to="statement" spy={true} smooth={true} duration={1000}>
+          <motion.svg
+            className="cover__down-arrow"
+            variants={downArrowVariants}
+            initial="initial"
+            animate="animate"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
             fill="#f6f4f1"
-          />
-        </motion.svg>
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM23.5858 38.5858L17 32L18.4142 30.5858L24 36.1716V9H26V36.1716L31.5858 30.5858L33 32L26.4142 38.5858L26 39L25 40L24 39L23.5858 38.5858Z"
+              fill="#f6f4f1"
+            />
+          </motion.svg>
+        </ScrollToLink>
       </div>
     </AnimatePresence>
   )

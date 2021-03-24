@@ -77,7 +77,7 @@ function Home({ data }) {
       <SEO title="Home" />
       <main>
         <Cover openingHours={openingHours} dimensions={dimensions} />
-        <section className="statement">
+        <section className="statement" id="statement">
           {dimensions.width >= breakpoints.mobile ? (
             <>
               <span className="text--display">
