@@ -18,18 +18,18 @@ const fastTransition = {
   ease: [0.6, 0.01, -0.05, 0.9],
 }
 
-const loadingVariants = {
-  initial: {
-    opacity: 1,
-  },
-  animate: {
-    opacity: 0,
-    transition: {
-      ...smoothTransition,
-      delay: 1.5,
-    },
-  },
-}
+// const loadingVariants = {
+//   initial: {
+//     opacity: 1,
+//   },
+//   animate: {
+//     opacity: 0,
+//     transition: {
+//       ...smoothTransition,
+//       delay: 1.5,
+//     },
+//   },
+// }
 
 const contentVariants = {
   initial: {
@@ -38,7 +38,7 @@ const contentVariants = {
   animate: {
     opacity: 1,
     transition: {
-      ...smoothTransition,
+      ...fastTransition,
       delay: 2,
     },
   },
@@ -69,7 +69,7 @@ const titleVariants = {
   animate: {
     translateY: 0,
     transition: {
-      ...fastTransition,
+      ...smoothTransition,
       delay: 0.3,
     },
   },
@@ -93,12 +93,12 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
           </motion.div>
         </div>
         <div className="cover__image-wrapper">
-          <motion.div
+          {/* <motion.div
             className="cover__loading"
             variants={loadingVariants}
             initial="initial"
             animate="animate"
-          ></motion.div>
+          ></motion.div> */}
           <motion.div
             className="cover__image-inner"
             style={{
