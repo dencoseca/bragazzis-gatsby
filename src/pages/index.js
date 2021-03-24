@@ -33,6 +33,7 @@ function Home({ data }) {
     vw: 100,
   })
 
+  // Set initial values as soon as page loads
   useEffect(() => {
     // Prevent flashing
     document.querySelector("main").classList.add("visible")
@@ -45,12 +46,14 @@ function Home({ data }) {
     })
   }, [])
 
+  // Reset window size variables as browser gets resized
   useEffect(() => {
     // Grab inner height of window
     let vh = dimensions.height * 0.01
     // Set css variable vh
     document.documentElement.style.setProperty("--vh", `${vh}px`)
 
+    // Only debounce / resize on tablet and larger
     if (dimensions.width >= breakpoints.mobile) {
       const debouncedHandleResize = debounce(function handleResize() {
         setDimensions({
