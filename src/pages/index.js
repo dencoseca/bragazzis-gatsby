@@ -75,7 +75,7 @@ function Home({ data }) {
       <main>
         <Cover openingHours={openingHours} dimensions={dimensions} />
         <section className="statement">
-          {dimensions.width >= 760 ? (
+          {dimensions.width >= breakpoints.mobile ? (
             <>
               <span className="text--display">
                 Roam freely and find inspiration...

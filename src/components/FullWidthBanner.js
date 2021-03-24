@@ -45,7 +45,7 @@ function FullWidthBanner({
             translateX: "-50%",
           }}
         >
-          {width >= 760 ? (
+          {width >= mobile ? (
             <>
               <span className="text--display">
                 Each season brings a selection of
