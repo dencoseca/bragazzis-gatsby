@@ -40,6 +40,7 @@ html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 // Prevent flashing by making 'main' element hidden until after page is loaded
