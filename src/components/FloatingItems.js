@@ -24,7 +24,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
-              src="../images/sandwiches.jpg"
+              src="../images/shelves.jpg"
               alt="delicious focaccia sandwiches"
               loading="eager"
             />
@@ -80,7 +80,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
-              src="../images/salad.jpg"
+              src="../images/ciabatta.jpg"
               alt="fresh salad being plated"
               loading="eager"
             />
@@ -101,7 +101,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           <div className="item__image-wrapper">
             <StaticImage
               className="item__image"
-              src="../images/shop.jpg"
+              src="../images/shop-christmas.jpg"
               alt="a beautifully stocked italian dry goods shop"
               loading="eager"
             />
