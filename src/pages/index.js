@@ -29,12 +29,14 @@ const smoothTransition = {
 const openingHoursVariants = {
   initial: {
     opacity: 0,
+    translateY: 100,
   },
   animate: {
     opacity: 1,
+    translateY: 0,
     transition: {
       ...smoothTransition,
-      delay: 1.5,
+      delay: 0.8,
     },
   },
 }
