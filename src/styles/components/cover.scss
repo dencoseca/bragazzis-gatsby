@@ -8,7 +8,8 @@
   position: relative;
 
   @media (max-width: $mobile) {
-    margin-bottom: 65vw;
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
   }
 }
 
@@ -75,7 +76,7 @@
   }
 
   @media (max-width: $mobile) {
-    font-size: 3.4vw;
+    font-size: 3vw;
     line-height: 2.9vw;
     text-align: center;
   }
@@ -120,15 +121,7 @@
     }
 
     @media (max-width: $mobile) {
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      bottom: -70vw;
-      color: $black;
-      font-weight: 300;
-      font-size: 3.5vw;
-      margin-bottom: 10vw;
-      text-align: center;
+      display: none;
     }
   }
 
@@ -145,9 +138,8 @@
     @media (max-width: $mobile) {
       left: 50%;
       transform: translateX(-50%);
-      top: 40vw;
+      bottom: 10vw;
       text-align: center;
-      font-size: 3.5vw;
       text-transform: uppercase;
       width: fit-content;
     }
@@ -175,5 +167,9 @@
 
   @media (max-width: $tablet) {
     width: 10vw;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
   }
 }

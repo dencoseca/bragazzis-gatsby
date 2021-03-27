@@ -55,6 +55,21 @@ main {
 // ==================
 // Monior components
 // ==================
+.mobile-cover {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+  font-weight: 300;
+  font-size: 3.5vw;
+  text-align: center;
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
+
+  @media (max-width: $mobile) {
+    display: flex;
+  }
+}
 
 .statement {
   padding: 19vw 0;
