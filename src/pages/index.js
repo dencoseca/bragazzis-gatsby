@@ -34,7 +34,7 @@ const openingHoursVariants = {
     opacity: 1,
     transition: {
       ...smoothTransition,
-      delay: 2,
+      delay: 1.5,
     },
   },
 }

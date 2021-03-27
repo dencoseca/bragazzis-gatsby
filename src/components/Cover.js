@@ -27,7 +27,7 @@ const contentVariants = {
     opacity: 1,
     transition: {
       ...smoothTransition,
-      delay: 2,
+      delay: 1.5,
     },
   },
 }
@@ -43,7 +43,7 @@ const downArrowVariants = {
     translateX: "-50%",
     transition: {
       ...smoothTransition,
-      delay: 3,
+      delay: 2,
       duration: 3,
       times: [0, 0.6, 1],
     },
