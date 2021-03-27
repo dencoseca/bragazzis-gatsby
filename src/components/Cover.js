@@ -11,7 +11,7 @@ import { Link as ScrollToLink } from "react-scroll"
 // Animations
 const smoothTransition = {
   duration: 1.1,
-  ease: [0.43, 0.13, 0.23, 0.96],
+  ease: [0.43, 0.13, 0.13, 0.96],
 }
 
 // const fastTransition = {
@@ -43,7 +43,7 @@ const downArrowVariants = {
     translateX: "-50%",
     transition: {
       ...smoothTransition,
-      delay: 2,
+      delay: 1.5,
       duration: 3,
       times: [0, 0.6, 1],
     },
@@ -58,6 +58,7 @@ const titleVariants = {
     translateY: 0,
     transition: {
       ...smoothTransition,
+      duration: 1.4,
       delay: 0.3,
     },
   },
