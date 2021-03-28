@@ -90,7 +90,7 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
           >
             <StaticImage
               className="cover__image"
-              src="../images/board.jpg"
+              src="../images/parmesan.jpg"
               alt="a busy Italian cafe"
               layout="fullWidth"
               loading="eager"

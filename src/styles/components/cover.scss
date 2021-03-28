@@ -107,14 +107,13 @@
     position: absolute;
     left: 3vw;
     bottom: 3vw;
-    font-weight: 600;
 
     @media (max-width: $tablet) {
       font-size: 2vw;
     }
 
     @media (max-width: $mobile) {
-     display: none;
+      display: none;
     }
   }
 
