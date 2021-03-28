@@ -44,7 +44,18 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                maytree
+                Maytree
+              </a>
+            </li>
+            <li className="text--sm">
+              &{" "}
+              <a
+                className="text--link"
+                href="https://www.elliegracephotography.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ellie Grace Photography
               </a>
             </li>
             <li className="text--sm">
