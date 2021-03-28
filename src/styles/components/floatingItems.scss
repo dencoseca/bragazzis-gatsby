@@ -35,7 +35,6 @@
     margin: 3vw 0;
     padding: 0 3vw;
     width: auto;
-    text-align: center;
   }
 }
 
@@ -76,7 +75,7 @@
 
     @media (max-width: $mobile) {
       width: auto;
-      text-align: center;
+      text-align: left;
       margin-right: 0;
     }
   }
@@ -116,7 +115,7 @@
 
     @media (max-width: $mobile) {
       width: auto;
-      text-align: center;
+      text-align: left;
     }
   }
 }
@@ -161,7 +160,7 @@
 
     @media (max-width: $mobile) {
       width: auto;
-      text-align: center;
+      text-align: left;
     }
   }
 }
@@ -196,7 +195,7 @@
 
     @media (max-width: $mobile) {
       width: auto;
-      text-align: center;
+      text-align: left;
     }
   }
 }
