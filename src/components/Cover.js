@@ -64,7 +64,11 @@ const titleVariants = {
   },
 }
 
-function Cover({ openingHours, dimensions: { width, vh } }) {
+function Cover({
+  openingHours,
+  dimensions: { width, vh },
+  breakpoints: { mobile },
+}) {
   const { scrollYProgress } = useViewportScroll()
   const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, vh * 59])
 
@@ -122,7 +126,12 @@ function Cover({ openingHours, dimensions: { width, vh } }) {
             </a>
           </div>
         </motion.div>
-        <ScrollToLink to="statement" spy={true} smooth={true} duration={1000}>
+        <ScrollToLink
+          to={width >= mobile ? "statement" : "mobile-cover"}
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >
           <motion.svg
             className="cover__down-arrow"
             variants={downArrowVariants}

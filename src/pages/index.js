@@ -76,8 +76,12 @@ function Home({ data }) {
     <>
       <SEO title="Home" />
       <main>
-        <Cover openingHours={openingHours} dimensions={dimensions} />
-        <section className="mobile-cover">
+        <Cover
+          openingHours={openingHours}
+          dimensions={dimensions}
+          breakpoints={breakpoints}
+        />
+        <section className="mobile-cover" id="mobile-cover">
           <div className="mobile-cover__opening-hours">
             {openingHours.map((line, index) => (
               <p key={index}>{line}</p>
@@ -85,25 +89,13 @@ function Home({ data }) {
           </div>
         </section>
         <section className="statement" id="statement">
-          {dimensions.width >= breakpoints.mobile ? (
-            <>
-              <span className="text--display">
-                Roam freely and find inspiration...
-              </span>
-              <span className="text--display">
-                or that obscure pasta shape that you've
-              </span>
-              <span className="text--display">been looking for</span>
-            </>
-          ) : (
-            <>
-              <span className="text--display">Roam freely</span>
-              <span className="text--display">and find inspiration...</span>
-              <span className="text--display">or that obscure pasta</span>
-              <span className="text--display">shape that you've</span>
-              <span className="text--display">been looking for</span>
-            </>
-          )}
+          <span className="text--display">
+            Roam freely and find inspiration...
+          </span>
+          <span className="text--display">
+            or that obscure pasta shape that you've
+          </span>
+          <span className="text--display">been looking for</span>
         </section>
         <FloatingItems dimensions={dimensions} breakpoints={breakpoints} />
         <FullWidthBanner dimensions={dimensions} breakpoints={breakpoints} />
