@@ -57,7 +57,7 @@ function FullWidthBanner({
               <span className="text--display">Each season</span>
               <span className="text--display">brings a selection</span>
               <span className="text--display">of well considered</span>
-              <span className="text--display">goods</span>
+              <span className="text--display">products</span>
             </>
           )}
         </motion.article>
