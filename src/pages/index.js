@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
-// import { AnimatePresence, motion } from "framer-motion"
 
 // Components
 import Cover from "../components/Cover"
@@ -19,27 +18,6 @@ function debounce(fn, ms) {
     }, ms)
   }
 }
-
-// Animations
-// const smoothTransition = {
-//   duration: 1.1,
-//   ease: [0.43, 0.13, 0.23, 0.96],
-// }
-
-// const openingHoursVariants = {
-//   initial: {
-//     opacity: 0,
-//     translateY: 100,
-//   },
-//   animate: {
-//     opacity: 1,
-//     translateY: 0,
-//     transition: {
-//       ...smoothTransition,
-//       delay: 0.8,
-//     },
-//   },
-// }
 
 function Home({ data }) {
   const openingHours =
@@ -99,20 +77,13 @@ function Home({ data }) {
       <SEO title="Home" />
       <main>
         <Cover openingHours={openingHours} dimensions={dimensions} />
-        {/* <AnimatePresence>
-          <section className="mobile-cover">
-            <motion.div
-              className="mobile-cover__opening-hours"
-              initial="initial"
-              animate="animate"
-              variants={openingHoursVariants}
-            >
-              {openingHours.map((line, index) => (
-                <p key={index}>{line}</p>
-              ))}
-            </motion.div>
-          </section>
-        </AnimatePresence> */}
+        <section className="mobile-cover">
+          <div className="mobile-cover__opening-hours">
+            {openingHours.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </div>
+        </section>
         <section className="statement" id="statement">
           {dimensions.width >= breakpoints.mobile ? (
             <>

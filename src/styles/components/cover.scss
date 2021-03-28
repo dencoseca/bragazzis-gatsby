@@ -106,7 +106,7 @@
   .opening-hours {
     position: absolute;
     right: 3vw;
-    bottom: 3vw;
+    top: 40vw;
     font-weight: 600;
     text-align: right;
 
@@ -115,12 +115,7 @@
     }
 
     @media (max-width: $mobile) {
-      font-size: 5vw;
-      text-align: center;
-      right: 50%;
-      transform: translateX(50%);
-      bottom: 30%;
-      width: 100%;
+     display: none;
     }
   }
 
