@@ -13,7 +13,7 @@ module.exports = {
     title: `Bragazzis`,
     titleTemplate: `Bragazzi's | %s`,
     description: `Purveyors of quality Italian goods.`,
-    url: `https://www.bragazzis.co.uk`,
+    siteUrl: `https://www.bragazzis.co.uk`,
     author: `Leon Brown`,
     image: `src/images/big-b-square-icon.png`,
   },
@@ -47,5 +47,6 @@ module.exports = {
         language: "en-US", // optional, defaults to en-US
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
