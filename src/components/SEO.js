@@ -50,7 +50,7 @@ function SEO({ title, description, image, article }) {
     name: "Bragazzi's",
     image: seo.image,
     priceRange: "£5-15",
-    telephone: "0114 258 1483",
+    telephone: "+441142581483",
     email: "info@bragazzis.co.uk",
     address: {
       "@type": "PostalAddress",
