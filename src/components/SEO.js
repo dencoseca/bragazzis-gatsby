@@ -42,7 +42,8 @@ function SEO({ title, description, image, article }) {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Restaurant",
+    "@type": "CafeOrCoffeeShop",
+    "@id": "https://www.bragazzis.co.uk/",
     url: seo.url,
     mainEntityOfPage: seo.url,
     description: seo.description,
@@ -50,15 +51,21 @@ function SEO({ title, description, image, article }) {
     image: seo.image,
     priceRange: "£5-15",
     telephone: "0114 258 1483",
+    email: "info@bragazzis.co.uk",
     address: {
       "@type": "PostalAddress",
       streetAddress: "224-228 Abbeydale Road",
       addressLocality: "Sheffield",
-      addressRegion: "South Yorkshire",
       postalCode: "S7 1FL",
       addressCountry: "UK",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 53.3627282,
+      longitude: -1.4779884,
+    },
     servesCuisine: "Italian",
+    acceptsReservations: "false",
     legalName: "Bragazzi's Ltd",
     logo: seo.logo,
     foundingDate: "2003",
