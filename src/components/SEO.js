@@ -45,6 +45,16 @@ function SEO({ title, description, image, article }) {
         lang: "en",
       }}
     >
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://www.bragazzis.co.uk",
+          "@type": "Restaurant",
+          url: seo.url,
+          mainEntityOfPage: seo.url,
+          description: seo.description,
+          name: seo.title,
+        }`}
+      </script>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
