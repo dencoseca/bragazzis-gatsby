@@ -24,7 +24,7 @@ module.exports = {
     description: `Purveyors of quality Italian goods. Bragazzi's is a cafe, shop and delicatessen.`,
     siteUrl,
     author: `Leon Brown`,
-    image: `src/images/big-b-square-icon.png`,
+    image: `src/images/cafe-view.jpg`,
   },
   plugins: [
     {
