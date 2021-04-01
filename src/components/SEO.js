@@ -43,7 +43,7 @@ function SEO({ title, description, image, article }) {
     url: seo.url,
     mainEntityOfPage: seo.url,
     description: seo.description,
-    name: seo.title,
+    name: "Bragazzi's",
     image: seo.image,
     priceRange: "£5-15",
     telephone: "0114 258 1483",
@@ -55,6 +55,7 @@ function SEO({ title, description, image, article }) {
       postalCode: "S7 1FL",
       addressCountry: "UK",
     },
+    servesCuisine: "Italian",
   }
 
   return (
