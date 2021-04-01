@@ -37,6 +37,15 @@ function SEO({ title, description, image, article }) {
     url: `${siteUrl}${pathname}`,
   }
 
+  const structuredData = {
+    "@context": "https://www.bragazzis.co.uk",
+    "@type": "Restaurant",
+    url: seo.url,
+    mainEntityOfPage: seo.url,
+    description: seo.description,
+    name: seo.title,
+  }
+
   return (
     <Helmet
       title={seo.title}
@@ -46,14 +55,7 @@ function SEO({ title, description, image, article }) {
       }}
     >
       <script type="application/ld+json">
-        {`{
-          "@context": "https://www.bragazzis.co.uk",
-          "@type": "Restaurant",
-          url: ${seo.url},
-          mainEntityOfPage: ${seo.url},
-          description: ${seo.description},
-          name: ${seo.title},
-        }`}
+        {JSON.stringify(structuredData)}
       </script>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
