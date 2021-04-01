@@ -47,13 +47,15 @@ function SEO({ title, description, image, article }) {
     url: seo.url,
     mainEntityOfPage: seo.url,
     description: seo.description,
+    headline: "Alimentari e caffè di qualità.",
     name: seo.title,
     image: seo.image,
     priceRange: "£5-15",
-    telephone: "+441142581483",
+    telephone: "+44114 258 1483",
     email: "info@bragazzis.co.uk",
     address: {
       "@type": "PostalAddress",
+      name: "Bragazzi's Cafe",
       streetAddress: "224-228 Abbeydale Road",
       addressLocality: "Sheffield",
       postalCode: "S7 1FL",
@@ -71,6 +73,7 @@ function SEO({ title, description, image, article }) {
     legalName: "Bragazzi's Ltd",
     logo: seo.logo,
     foundingDate: "2003",
+    foundingLocation: "Sheffield",
     founders: [
       {
         "@type": "Person",
@@ -82,6 +85,7 @@ function SEO({ title, description, image, article }) {
       "https://www.instagram.com/bragazzis",
     ],
     inLanguage: "en-UK",
+    petsAllowed: "No",
   }
 
   return (

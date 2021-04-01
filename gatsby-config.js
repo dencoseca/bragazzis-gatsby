@@ -18,7 +18,7 @@ module.exports = {
   siteMetadata: {
     title: `Bragazzis`,
     titleTemplate: `Bragazzi's | %s`,
-    description: `Purveyors of quality Italian goods. Bragazzi's is a cafe, shop and delicatessen.`,
+    description: `Purveyors of quality Italian goods. Bragazzi's is a cafe, shop and delicatessen. Roam freely and find inspiration... or that obscure pasta shape that you've been looking for.`,
     siteUrl,
     author: `Leon Brown`,
     image: `src/images/cafe-view-SEO.jpg`,
