@@ -44,8 +44,19 @@ function SEO({ title, description, image, article }) {
     mainEntityOfPage: seo.url,
     description: seo.description,
     name: seo.title,
+    image: seo.image,
+    priceRange: "£5-15",
+    telephone: "0114 258 1483",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "224-228 Abbeydale Road",
+      addressLocality: "Sheffield",
+      addressRegion: "South Yorkshire",
+      postalCode: "S7 1FL",
+      addressCountry: "UK",
+    },
   }
-  console.log(seo)
+
   return (
     <Helmet
       title={seo.title}
