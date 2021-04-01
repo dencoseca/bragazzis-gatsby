@@ -49,10 +49,10 @@ function SEO({ title, description, image, article }) {
         {`{
           "@context": "https://www.bragazzis.co.uk",
           "@type": "Restaurant",
-          url: seo.url,
-          mainEntityOfPage: seo.url,
-          description: seo.description,
-          name: seo.title,
+          url: ${seo.url},
+          mainEntityOfPage: ${seo.url},
+          description: ${seo.description},
+          name: ${seo.title},
         }`}
       </script>
       <meta name="description" content={seo.description} />
