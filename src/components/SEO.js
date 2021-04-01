@@ -38,14 +38,14 @@ function SEO({ title, description, image, article }) {
   }
 
   const structuredData = {
-    "@context": seo.url,
+    "@context": "https://www.bragazzis.co.uk",
     "@type": "Restaurant",
     url: seo.url,
     mainEntityOfPage: seo.url,
     description: seo.description,
     name: seo.title,
   }
-
+  console.log(seo)
   return (
     <Helmet
       title={seo.title}
