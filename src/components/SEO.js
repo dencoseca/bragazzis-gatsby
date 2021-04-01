@@ -38,7 +38,7 @@ function SEO({ title, description, image, article }) {
   }
 
   const structuredData = {
-    "@context": "https://www.bragazzis.co.uk",
+    "@context": seo.url,
     "@type": "Restaurant",
     url: seo.url,
     mainEntityOfPage: seo.url,
