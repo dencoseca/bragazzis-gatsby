@@ -43,7 +43,7 @@ function SEO({ title, description, image, article }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
-    "@id": "https://www.bragazzis.co.uk/",
+    "@id": "https://www.bragazzis.co.uk/#cafeorcoffeeshop",
     url: seo.url,
     mainEntityOfPage: seo.url,
     description: seo.description,
@@ -79,6 +79,7 @@ function SEO({ title, description, image, article }) {
       "https://www.facebook.com/bragazzis",
       "https://www.instagram.com/bragazzis",
     ],
+    inLanguage: "en-UK",
   }
 
   return (
