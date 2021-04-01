@@ -13,6 +13,7 @@ const query = graphql`
         defaultDescription: description
         siteUrl
         defaultImage: image
+        logo
       }
     }
   }
@@ -28,6 +29,7 @@ function SEO({ title, description, image, article }) {
     defaultDescription,
     siteUrl,
     defaultImage,
+    logo,
   } = site.siteMetadata
 
   const seo = {
@@ -35,6 +37,7 @@ function SEO({ title, description, image, article }) {
     description: description || defaultDescription,
     image: `${siteUrl}/${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
+    logo,
   }
 
   const structuredData = {
@@ -56,6 +59,19 @@ function SEO({ title, description, image, article }) {
       addressCountry: "UK",
     },
     servesCuisine: "Italian",
+    legalName: "Bragazzi's Ltd",
+    logo: seo.logo,
+    foundingDate: "2003",
+    founders: [
+      {
+        "@type": "Person",
+        name: "Matteo Bragazzi",
+      },
+    ],
+    sameAs: [
+      "https://www.facebook.com/bragazzis",
+      "https://www.instagram.com/bragazzis",
+    ],
   }
 
   return (

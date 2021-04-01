@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -25,6 +19,7 @@ module.exports = {
     siteUrl,
     author: `Leon Brown`,
     image: `src/images/cafe-view-SEO.jpg`,
+    logo: `src/images/big-b-square-icon.png`,
   },
   plugins: [
     {
