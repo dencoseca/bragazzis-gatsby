@@ -21,14 +21,13 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           className="item item--1"
           style={{ translateY: width >= mobile ? item1Scroll : 0 }}
         >
-          <div className="item__image-wrapper">
-            <StaticImage
-              className="item__image"
-              src="../images/shelves.jpg"
-              alt="delicious focaccia sandwiches"
-              loading="eager"
-            />
-          </div>
+          <StaticImage
+            className="item__image"
+            src="../images/shelves.jpg"
+            alt="delicious focaccia sandwiches"
+            loading="eager"
+            objectFit="cover"
+          />
           <div className="item__text">
             <p className="text--md">
               <span className="text--initial">We</span> are a small team of
@@ -54,14 +53,13 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           className="item item--2"
           style={{ translateY: width >= mobile ? item2Scroll : 0 }}
         >
-          <div className="item__image-wrapper">
-            <StaticImage
-              className="item__image"
-              src="../images/coffee-pour.jpg"
-              alt="silky coffee being poured"
-              loading="eager"
-            />
-          </div>
+          <StaticImage
+            className="item__image"
+            src="../images/coffee-pour.jpg"
+            alt="silky coffee being poured"
+            loading="eager"
+            objectFit="cover"
+          />
           <div className="item__text">
             <p className="text--md">
               <span className="text--initial">We</span> use our own carefully
@@ -77,14 +75,13 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           className="item item--3"
           style={{ translateY: width >= mobile ? item3Scroll : 0 }}
         >
-          <div className="item__image-wrapper">
-            <StaticImage
-              className="item__image"
-              src="../images/ciabatta.jpg"
-              alt="fresh salad being plated"
-              loading="eager"
-            />
-          </div>
+          <StaticImage
+            className="item__image"
+            src="../images/ciabatta.jpg"
+            alt="fresh salad being plated"
+            loading="eager"
+            objectFit="cover"
+          />
           <div className="item__text">
             <p className="text--md">
               <span className="text--initial">We</span> trade directly with
@@ -98,14 +95,13 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
           className="item item--4"
           style={{ translateY: width >= mobile ? item4Scroll : 0 }}
         >
-          <div className="item__image-wrapper">
-            <StaticImage
-              className="item__image"
-              src="../images/shop-christmas.jpg"
-              alt="a beautifully stocked italian dry goods shop"
-              loading="eager"
-            />
-          </div>
+          <StaticImage
+            className="item__image"
+            src="../images/shop-christmas.jpg"
+            alt="a beautifully stocked italian dry goods shop"
+            loading="eager"
+            objectFit="cover"
+          />
           <div className="item__text">
             <p className="text--md">
               <span className="text--initial">We</span> maintain a good supply
