@@ -1,7 +1,9 @@
+// Set correct environment variables
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+// Setup variables for ingoring Netlify deploy previews in gatsby-plugin-robots-txt
 const {
   NODE_ENV,
   URL: NETLIFY_SITE_URL = "https://www.bragazzis.co.uk",
@@ -11,6 +13,7 @@ const {
 const isNetlifyProduction = NETLIFY_ENV === "production"
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
+// Cofigure plugins
 module.exports = {
   siteMetadata: {
     title: `Bragazzis`,
