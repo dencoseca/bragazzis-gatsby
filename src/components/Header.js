@@ -16,8 +16,12 @@ function Header() {
         </Link>
       </div>
       <nav className="header__nav">
-        <Link to="/historia">Historia</Link>
-        <Link to="/historia">Il Giorno</Link>
+        <Link className="header__link" to="/historia">
+          Historia
+        </Link>
+        <Link className="header__link" to="/historia">
+          Il Giorno
+        </Link>
       </nav>
     </div>
   )

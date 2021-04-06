@@ -25,14 +25,34 @@
   top: 1vw;
 }
 
-.header__nav {
-  a {
-    text-decoration: none;
-    color: $white;
-    text-transform: uppercase;
+.header__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
 
-    &:first-of-type {
-      margin-right: 3vw;
+  &:first-of-type {
+    margin-right: 3vw;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    display: block;
+    margin-top: 0.3vw;
+    right: 0;
+    background-color: $white;
+    transition: 0.4s ease;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      left: 0;
+      background-color: $white;
     }
   }
 }
