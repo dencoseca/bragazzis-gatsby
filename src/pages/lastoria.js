@@ -43,6 +43,15 @@ function LaStoria({ location }) {
               it to England, ready for the cafe to come.
             </p>
           </div>
+          <div className="lastoria__statement text--display">
+            <div>If you build it, they will come...</div>
+            <div>and drink espresso</div>
+          </div>
+          <StaticImage
+            src="../images/cafe-view.jpg"
+            alt="a busy Italian cafe"
+            layout="fullWidth"
+          />
         </div>
       </Layout>
     </>
