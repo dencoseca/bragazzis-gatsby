@@ -22,7 +22,7 @@ module.exports = {
     siteUrl,
     author: `Leon Brown`,
     image: `src/images/cafe-view-SEO.jpg`,
-    logo: `src/images/big-b-square-icon.png`,
+    logo: `src/images/big-b-black.png`,
   },
   plugins: [
     {
@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#f6f4f1`,
         theme_color: `#1d1d1d`,
         display: `standalone`,
-        icon: `src/images/big-b-square-icon.png`,
+        icon: `src/images/big-b-black.png`,
         icon_options: {
           purpose: `any maskable`,
         },
