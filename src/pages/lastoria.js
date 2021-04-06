@@ -7,7 +7,9 @@ function LaStoria({ location }) {
   return (
     <>
       <Layout pageTitle="La Storia" location={location}>
-        <main></main>
+        <div className="lastoria">
+          <div className="lastoria__title text--page-title">La Storia</div>
+        </div>
       </Layout>
     </>
   )

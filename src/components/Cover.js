@@ -77,7 +77,7 @@ function Cover({
       <div className="cover" id="cover">
         <div className="cover__title-wrapper">
           <motion.div
-            className="cover__title"
+            className="cover__title text--page-title"
             variants={titleVariants}
             initial="initial"
             animate="animate"

@@ -32,23 +32,18 @@
 // ==================================
 
 .cover__title-wrapper {
-  font-family: $displayFont;
   position: absolute;
   left: 50%;
   top: 10%;
   transform: translateX(-50%);
   color: $white;
-  font-size: 16.5vw;
   z-index: 2;
   overflow: hidden;
 
   @media (max-width: $tablet) {
     top: 15vw;
   }
-
-  @media (max-width: $mobile) {
-    font-size: 15vw;
-  }
+ 
 }
 
 // ==========================

@@ -73,6 +73,17 @@ $textFont: "Josefin Sans", sans-serif;
 // Global text styles
 // ===================
 
+.text--page-title {
+  font-family: $displayFont;
+  font-size: 16.5vw;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    font-size: 15vw;
+  }
+}
+
 .text--sm {
   font-size: 1vw;
   font-weight: 300;
