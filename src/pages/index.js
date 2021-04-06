@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 // Components
 import Cover from "../components/Cover"
 import FloatingItems from "../components/FloatingItems"
-import Footer from "../components/Footer"
 import FullWidthBanner from "../components/FullWidthBanner"
 import SEO from "../components/SEO"
 
