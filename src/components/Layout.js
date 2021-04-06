@@ -5,15 +5,13 @@ import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./SEO"
 
-function Layout({ children, pageTitle, location = "" }) {
+function Layout({ children, pageTitle, location }) {
   return (
     <>
       <SEO title={pageTitle} />
-      <main>
-        <Header location={location} />
-        {children}
-        <Footer />
-      </main>
+      <Header location={location} />
+      {children}
+      <Footer />
     </>
   )
 }

@@ -29,8 +29,8 @@ function Header({ location }) {
         </Link>
       </div>
       <nav className="header__nav">
-        <Link className="header__link" to="/historia">
-          Historia
+        <Link className="header__link" to="/lastoria">
+          La Storia
         </Link>
         <Link className="header__link" to="/ilgiorno">
           Il Giorno

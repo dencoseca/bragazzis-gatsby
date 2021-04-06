@@ -72,8 +72,8 @@ function Home({ data, location }) {
   }, [dimensions, breakpoints.mobile])
 
   return (
-    <>
-      <Layout pageTitle="Home" location={location}>
+    <Layout pageTitle="Home" location={location}>
+      <main>
         <Cover
           openingHours={openingHours}
           dimensions={dimensions}
@@ -119,8 +119,8 @@ function Home({ data, location }) {
             continuously reviewing our procedures related to capacity.
           </p>
         </section>
-      </Layout>
-    </>
+      </main>
+    </Layout>
   )
 }
 
