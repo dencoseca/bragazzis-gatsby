@@ -15,12 +15,14 @@ function Header({ location }) {
             <StaticImage
               className="header__logo"
               src="../images/big-b-white.png"
+              alt="logo"
               loading="eager"
             />
           ) : (
             <StaticImage
               className="header__logo"
               src="../images/big-b-black.png"
+              alt="logo"
               loading="eager"
             />
           )}
