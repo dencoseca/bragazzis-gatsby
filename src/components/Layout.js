@@ -5,7 +5,7 @@ import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./SEO"
 
-function Layout({ children, pageTitle, location = null }) {
+function Layout({ children, pageTitle, location = "" }) {
   return (
     <>
       <SEO title={pageTitle} />

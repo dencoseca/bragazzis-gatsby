@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 function Header({ location }) {
   return (
     <div
-      className={location.pathname === "/" ? "header" : "header--dark"}
+      className={location.pathname === "/" ? "header" : "header header--dark"}
       id="header"
     >
       <div className="header__tag">Purveyors of quality Italian goods</div>
@@ -30,7 +30,7 @@ function Header({ location }) {
         <Link className="header__link" to="/historia">
           Historia
         </Link>
-        <Link className="header__link" to="/historia">
+        <Link className="header__link" to="/ilgiorno">
           Il Giorno
         </Link>
       </nav>
