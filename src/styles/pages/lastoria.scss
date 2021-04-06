@@ -1,3 +1,34 @@
+.lastoria__title-wrapper {
+  position: relative;
+
+  .ticket {
+    position: absolute;
+    top: 65%;
+    width: 30vw;
+    z-index: -1;
+
+    &.left {
+      left: -5vw;
+      transform: rotate(-25deg);
+    }
+
+    &.right {
+      right: -5vw;
+      transform: rotate(25deg);
+    }
+  }
+}
+
 .lastoria__title {
-  margin: 10vw 0;
+  margin: 10vw 0 0;
+}
+
+.lastoria__story {
+  width: 45vw;
+  margin: 10vw auto;
+  text-align: center;
+
+  p {
+    margin-top: 2vw;
+  }
 }

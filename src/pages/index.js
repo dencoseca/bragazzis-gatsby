@@ -78,25 +78,21 @@ function Home({ data, location }) {
         dimensions={dimensions}
         breakpoints={breakpoints}
       />
-      <section className="mobile-cover" id="mobile-cover">
-        <div className="mobile-cover__opening-hours">
+      <section className="home__mobile-cover" id="mobile-cover">
+        <div>
           {openingHours.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
         </div>
       </section>
-      <section className="statement" id="statement">
-        <span className="text--display">
-          Roam freely and find inspiration...
-        </span>
-        <span className="text--display">
-          or that obscure pasta shape that you've
-        </span>
-        <span className="text--display">been looking for</span>
+      <section className="home__statement text--display" id="statement">
+        <span>Roam freely and find inspiration...</span>
+        <span>or that obscure pasta shape that you've</span>
+        <span>been looking for</span>
       </section>
       <FloatingItems dimensions={dimensions} breakpoints={breakpoints} />
       <FullWidthBanner dimensions={dimensions} breakpoints={breakpoints} />
-      <section className="covid-notice">
+      <section className="home__covid-notice">
         <span className="text--display">Covid Restrictions</span>
         <p className="text--md">
           We want to reassure you that we are putting all measures in place to
