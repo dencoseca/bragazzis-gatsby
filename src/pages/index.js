@@ -18,7 +18,7 @@ function debounce(fn, ms) {
   }
 }
 
-function Home({ data }) {
+function Home({ data, location }) {
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
   const breakpoints = {
@@ -73,7 +73,7 @@ function Home({ data }) {
 
   return (
     <>
-      <Layout pageTitle="Home">
+      <Layout pageTitle="Home" location={location}>
         <Cover
           openingHours={openingHours}
           dimensions={dimensions}
