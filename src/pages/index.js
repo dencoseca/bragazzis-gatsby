@@ -75,54 +75,51 @@ function Home({ data }) {
   return (
     <>
       <SEO title="Home" />
-      <main>
-        <Cover
-          openingHours={openingHours}
-          dimensions={dimensions}
-          breakpoints={breakpoints}
-        />
-        <section className="mobile-cover" id="mobile-cover">
-          <div className="mobile-cover__opening-hours">
-            {openingHours.map((line, index) => (
-              <p key={index}>{line}</p>
-            ))}
-          </div>
-        </section>
-        <section className="statement" id="statement">
-          <span className="text--display">
-            Roam freely and find inspiration...
-          </span>
-          <span className="text--display">
-            or that obscure pasta shape that you've
-          </span>
-          <span className="text--display">been looking for</span>
-        </section>
-        <FloatingItems dimensions={dimensions} breakpoints={breakpoints} />
-        <FullWidthBanner dimensions={dimensions} breakpoints={breakpoints} />
-        <section className="covid-notice">
-          <span className="text--display">Covid Restrictions</span>
-          <p className="text--md">
-            We want to reassure you that we are putting all measures in place to
-            keep you and our team safe so that you can confidently enjoy your
-            visit.
-          </p>
-          <p className="text--md">
-            We are following all government guidelines and working on practice
-            measures within the shop. We have completed necessary risk
-            assessments and all procedures which will be constantly reviewed and
-            updated where necessary in line with government guidelines.
-          </p>
-          <p className="text--md">
-            We ask you to please use common sense to play your part keeping
-            everyone safe. In return we will be doing the same for you.
-          </p>
-          <p className="text--md">
-            Due to the constantly changing nature of this guidance, we will be
-            continuously reviewing our procedures related to capacity.
-          </p>
-        </section>
-        <Footer />
-      </main>
+      <Cover
+        openingHours={openingHours}
+        dimensions={dimensions}
+        breakpoints={breakpoints}
+      />
+      <section className="mobile-cover" id="mobile-cover">
+        <div className="mobile-cover__opening-hours">
+          {openingHours.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+        </div>
+      </section>
+      <section className="statement" id="statement">
+        <span className="text--display">
+          Roam freely and find inspiration...
+        </span>
+        <span className="text--display">
+          or that obscure pasta shape that you've
+        </span>
+        <span className="text--display">been looking for</span>
+      </section>
+      <FloatingItems dimensions={dimensions} breakpoints={breakpoints} />
+      <FullWidthBanner dimensions={dimensions} breakpoints={breakpoints} />
+      <section className="covid-notice">
+        <span className="text--display">Covid Restrictions</span>
+        <p className="text--md">
+          We want to reassure you that we are putting all measures in place to
+          keep you and our team safe so that you can confidently enjoy your
+          visit.
+        </p>
+        <p className="text--md">
+          We are following all government guidelines and working on practice
+          measures within the shop. We have completed necessary risk assessments
+          and all procedures which will be constantly reviewed and updated where
+          necessary in line with government guidelines.
+        </p>
+        <p className="text--md">
+          We ask you to please use common sense to play your part keeping
+          everyone safe. In return we will be doing the same for you.
+        </p>
+        <p className="text--md">
+          Due to the constantly changing nature of this guidance, we will be
+          continuously reviewing our procedures related to capacity.
+        </p>
+      </section>
     </>
   )
 }
