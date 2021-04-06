@@ -4,14 +4,16 @@ import { StaticImage } from "gatsby-plugin-image"
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo">
-        <StaticImage
-          className="header__logo"
-          src="../images/big-b-white.png"
-          loading="eager"
-        />
+        <Link to="/">
+          <StaticImage
+            className="header__logo"
+            src="../images/big-b-white.png"
+            loading="eager"
+          />
+        </Link>
       </div>
       <nav className="header__nav">
         <Link to="/historia">Historia</Link>
