@@ -75,33 +75,33 @@
     text-align: center;
   }
 
-  .tag {
-    position: absolute;
-    top: 3vw;
-    text-transform: uppercase;
+  // .tag {
+  //   position: absolute;
+  //   top: 3vw;
+  //   text-transform: uppercase;
 
-    &.left {
-      left: 3vw;
-    }
+  //   &.left {
+  //     left: 3vw;
+  //   }
 
-    &.right {
-      right: 3vw;
-      text-align: right;
-    }
+  //   &.right {
+  //     right: 3vw;
+  //     text-align: right;
+  //   }
 
-    @media (max-width: $mobile) {
-      &.left {
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        top: 10vw;
-      }
+  //   @media (max-width: $mobile) {
+  //     &.left {
+  //       left: 50%;
+  //       transform: translateX(-50%);
+  //       width: 100%;
+  //       top: 10vw;
+  //     }
 
-      &.right {
-        display: none;
-      }
-    }
-  }
+  //     &.right {
+  //       display: none;
+  //     }
+  //   }
+  // }
 
   .opening-hours {
     position: absolute;

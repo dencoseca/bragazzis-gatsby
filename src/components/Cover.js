@@ -108,8 +108,8 @@ function Cover({
           initial="initial"
           animate="animate"
         >
-          <div className="tag left">Purveyors of quality Italian goods</div>
-          <div className="tag right">Cafe, shop and delicatessen</div>
+          {/* <div className="tag left">Purveyors of quality Italian goods</div>
+          <div className="tag right">Cafe, shop and delicatessen</div> */}
           <div className="opening-hours">
             {openingHours.map((line, index) => (
               <p key={index}>{line}</p>
