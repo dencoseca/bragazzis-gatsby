@@ -20,16 +20,26 @@
 }
 
 .lastoria__title {
-  margin: 10vw 0 0;
+  margin: 8vw 0 0;
 }
 
 .lastoria__story {
-  width: 45vw;
-  margin: 10vw auto;
-  text-align: center;
+  margin: 25vw 0 0;
 
-  p {
-    margin-top: 2vw;
+  .slide {
+    margin: 10vw;
+    display: flex;
+
+    &.right {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .slide__image {
+  }
+
+  .slide__text {
+    width: 60vw;
   }
 }
 
