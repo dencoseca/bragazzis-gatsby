@@ -27,22 +27,22 @@ function LaStoria({ location }) {
             <div>and drink espresso</div>
           </div>
           <div className="lastoria__story">
-            <StaticImage src="../images/cafe-view.jpg" alt="A busy cafe" />
-            <p className="text--md">
+            <StaticImage src="../images/early-days.jpg" alt="A busy cafe" />
+            <p className="text--lg">
               Bragazzi’s opened in Sheffield in 2003 and is owned by Matteo
               Bragazzi. Bragazzi’s is an outlier and safe haven for people who
               enjoy the “qualcosa in più“.
             </p>
             <StaticImage src="../images/cafe-view.jpg" alt="A busy cafe" />
-            <p className="text--md">
+            <p className="text--lg">
               Matteo has a brother, Dino, they often holiday together. In Rome
               one evening, enjoying a Shakerato, Matteo’s mind drifted. Sorry to
               see him this way, Dino started up a monologue on their family
               history of Italian dining in London. Their father had come over,
               like so many others, and made a business of selling food.
             </p>
-            <StaticImage src="../images/early-days.jpg" alt="A busy cafe" />
-            <p className="text--md">
+            <StaticImage src="../images/shopfront.jpg" alt="A busy cafe" />
+            <p className="text--lg">
               As Dino reached a point about the Corradi brothers, Matteo
               recognised his fate as the same. And so, the bet was placed over a
               plastic table, outside a bar in Fiano Romano on that hot evening
