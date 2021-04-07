@@ -23,36 +23,16 @@
   margin: 8vw 0 0;
 }
 
-.lastoria__story {
-  margin: 25vw 0 0;
-
-  .slide {
-    margin: 10vw 0;
-    display: flex;
-    text-align: center;
-
-    &.right {
-      flex-direction: row-reverse;
-    }
-  }
-
-  .slide__image {
-    flex: 1;
-  }
-
-  .slide__text {
-    flex: 1;
-
-    p {
-      padding: 3vw;
-    }
-  }
-
-  .slide__blank-space {
-    flex: 1;
-  }
-}
-
 .lastoria__statement {
   margin: 12vw 0;
+}
+
+.lastoria__story {
+  margin: 0 20vw;
+  text-align: center;
+
+  p {
+    width: 45vw;
+    margin: 2vw auto 10vw;
+  }
 }
