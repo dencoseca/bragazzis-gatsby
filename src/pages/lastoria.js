@@ -29,13 +29,14 @@ function LaStoria({ location }) {
                 src="../images/cafe-view.jpg"
                 alt="cafe view"
               />
-              <div className="slide__text">
+              <div className="slide__text text--md">
                 <p>
                   Bragazzi’s opened in Sheffield in 2003 and is owned by Matteo
                   Bragazzi. Bragazzi’s is an outlier and safe haven for people
                   who enjoy the “qualcosa in più“.
                 </p>
               </div>
+              <div className="slide__blank-space"></div>
             </div>
             <div className="slide right">
               <StaticImage
@@ -43,7 +44,7 @@ function LaStoria({ location }) {
                 src="../images/cafe-view.jpg"
                 alt="cafe view"
               />
-              <div className="slide__text">
+              <div className="slide__text text--md">
                 <p>
                   Matteo has a brother, Dino, they often holiday together. In
                   Rome one evening, enjoying a Shakerato, Matteo’s mind drifted.
@@ -53,6 +54,7 @@ function LaStoria({ location }) {
                   selling food.
                 </p>
               </div>
+              <div className="slide__blank-space"></div>
             </div>
             <div className="slide left">
               <StaticImage
@@ -60,7 +62,7 @@ function LaStoria({ location }) {
                 src="../images/cafe-view.jpg"
                 alt="cafe view"
               />
-              <div className="slide__text">
+              <div className="slide__text text--md">
                 <p>
                   As Dino reached a point about the Corradi brothers, Matteo
                   recognised his fate as the same. And so, the bet was placed
@@ -69,6 +71,7 @@ function LaStoria({ location }) {
                   Maria and floated it to England, ready for the cafe to come.
                 </p>
               </div>
+              <div className="slide__blank-space"></div>
             </div>
           </div>
           <div className="lastoria__statement text--display">

@@ -27,8 +27,9 @@
   margin: 25vw 0 0;
 
   .slide {
-    margin: 10vw;
+    margin: 10vw 0;
     display: flex;
+    text-align: center;
 
     &.right {
       flex-direction: row-reverse;
@@ -36,10 +37,19 @@
   }
 
   .slide__image {
+    flex: 1;
   }
 
   .slide__text {
-    width: 60vw;
+    flex: 1;
+
+    p {
+      padding: 3vw;
+    }
+  }
+
+  .slide__blank-space {
+    flex: 1;
   }
 }
 
