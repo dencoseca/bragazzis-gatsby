@@ -22,18 +22,14 @@ function LaStoria({ location }) {
               alt="plane ticket"
             />
           </div>
-          <div className="lastoria__statement text--display">
-            <div>If you build it, they will come...</div>
-            <div>and drink espresso</div>
-          </div>
+
           <div className="lastoria__story">
-            <StaticImage src="../images/early-days.jpg" alt="A busy cafe" />
             <p className="text--lg">
               Bragazzi’s opened in Sheffield in 2003 and is owned by Matteo
               Bragazzi. Bragazzi’s is an outlier and safe haven for people who
               enjoy the “qualcosa in più“.
             </p>
-            <StaticImage src="../images/cafe-view.jpg" alt="A busy cafe" />
+            <div className="line"></div>
             <p className="text--lg">
               Matteo has a brother, Dino, they often holiday together. In Rome
               one evening, enjoying a Shakerato, Matteo’s mind drifted. Sorry to
@@ -41,7 +37,7 @@ function LaStoria({ location }) {
               history of Italian dining in London. Their father had come over,
               like so many others, and made a business of selling food.
             </p>
-            <StaticImage src="../images/shopfront.jpg" alt="A busy cafe" />
+            <div className="line"></div>
             <p className="text--lg">
               As Dino reached a point about the Corradi brothers, Matteo
               recognised his fate as the same. And so, the bet was placed over a
@@ -49,6 +45,14 @@ function LaStoria({ location }) {
               in 2002. They did a big shop with help from Zia Maria and floated
               it to England, ready for the cafe to come.
             </p>
+            <div className="line"></div>
+          </div>
+          <div className="lastoria__image">
+            <StaticImage src="../images/early-days.jpg" alt="A busy cafe" />
+          </div>
+          <div className="lastoria__statement text--display">
+            <div>If you build it, they will come...</div>
+            <div>and drink espresso</div>
           </div>
         </div>
       </Layout>

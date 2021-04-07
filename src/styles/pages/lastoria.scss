@@ -28,11 +28,23 @@
 }
 
 .lastoria__story {
-  margin: 0 20vw;
+  margin: 10vw 20vw;
   text-align: center;
 
   p {
     width: 45vw;
-    margin: 2vw auto 10vw;
+    margin: 3vw auto;
   }
+
+  .line {
+    width: 1px;
+    height: 15vw;
+    background-color: $black;
+    margin: 0 auto;
+  }
+}
+
+.lastoria__image {
+  margin: 0 auto;
+  width: 50vw;
 }
