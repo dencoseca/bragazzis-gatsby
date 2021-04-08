@@ -5,7 +5,6 @@
     position: absolute;
     top: 65%;
     width: 30vw;
-    z-index: -1;
 
     &.left {
       left: -5vw;
@@ -20,7 +19,9 @@
 }
 
 .lastoria__title {
-  margin: 8vw 0 0;
+  padding: 8vw 0 0;
+  position: relative;
+  z-index: 1;
 }
 
 .lastoria__statement {

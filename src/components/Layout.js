@@ -6,6 +6,9 @@ import Header from "./Header"
 import SEO from "./SEO"
 
 function Layout({ children, pageTitle, location }) {
+  const mainBackgroundColor =
+    location.pathname === "/ilgiorno" ? "#1d1d1d" : "#ffffff"
+
   useEffect(() => {
     // Prevent flashing
     document.querySelector("main").classList.add("visible")
@@ -15,6 +18,9 @@ function Layout({ children, pageTitle, location }) {
     <>
       <SEO title={pageTitle} />
       <main
+        style={{
+          backgroundColor: mainBackgroundColor,
+        }}
       >
         <Header location={location} />
         {children}
