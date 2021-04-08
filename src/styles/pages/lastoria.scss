@@ -9,11 +9,13 @@
     &.left {
       left: -5vw;
       transform: rotate(-25deg);
+      top: 50vw;
     }
 
     &.right {
       right: -5vw;
       transform: rotate(25deg);
+      top: 90vw;
     }
   }
 }
@@ -29,7 +31,7 @@
 }
 
 .lastoria__story {
-  margin: 10vw 20vw;
+  margin: 10vw 20vw 4vw;
   text-align: center;
 
   p {
