@@ -2,19 +2,20 @@ import React from "react"
 import { Link as ScrollToLink } from "react-scroll"
 
 function Footer({ location }) {
+  const footerClassName =
+    location.pathname === "/ilgiorno" ? "footer footer--light" : "footer"
+  const textLinkClassName =
+    location.pathname === "/ilgiorno" ? "text--link-light" : "text--link-dark"
+
   return (
-    <footer
-      className={
-        location.pathname === "/ilgiorno" ? "footer footer--light" : "footer"
-      }
-    >
+    <footer className={footerClassName}>
       <div className="footer__lists">
         <div className="list contact">
           <h4 className="text--heading-sm">Contact</h4>
           <ul>
             <li className="text--sm">
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://goo.gl/maps/n4uLGJGtaqSjSfoo6"
                 target="_blank"
                 rel="noreferrer"
@@ -25,12 +26,15 @@ function Footer({ location }) {
               </a>
             </li>
             <li className="text--sm">
-              <a className="text--link" href="mailto:info@braazzis.co.uk">
+              <a
+                className={textLinkClassName}
+                href="mailto:info@braazzis.co.uk"
+              >
                 info@bragazzis.co.uk
               </a>
             </li>
             <li className="text--sm">
-              <a className="text--link" href="tel:+441142581483">
+              <a className={textLinkClassName} href="tel:+441142581483">
                 0114 258 1483
               </a>
             </li>
@@ -43,7 +47,7 @@ function Footer({ location }) {
             <li className="text--sm">
               photography by{" "}
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://www.maytreephotography.co.uk"
                 target="_blank"
                 rel="noreferrer"
@@ -54,7 +58,7 @@ function Footer({ location }) {
             <li className="text--sm">
               &{" "}
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://www.elliegracephotography.co.uk/"
                 target="_blank"
                 rel="noreferrer"
@@ -65,7 +69,7 @@ function Footer({ location }) {
             <li className="text--sm">
               site by{" "}
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://leonbrown.dev"
                 target="_blank"
                 rel="noreferrer"
@@ -80,7 +84,7 @@ function Footer({ location }) {
           <ul>
             <li className="text--sm">
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://www.facebook.com/bragazzis/"
                 target="_blank"
                 rel="noreferrer"
@@ -90,7 +94,7 @@ function Footer({ location }) {
             </li>
             <li className="text--sm">
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://www.instagram.com/bragazzis/"
                 target="_blank"
                 rel="noreferrer"
@@ -100,7 +104,7 @@ function Footer({ location }) {
             </li>
             <li className="text--sm">
               <a
-                className="text--link"
+                className={textLinkClassName}
                 href="https://www.tripadvisor.co.uk/Restaurant_Review-g186364-d3435970-Reviews-Bragazzis-Sheffield_South_Yorkshire_England.html"
                 target="_blank"
                 rel="noreferrer"

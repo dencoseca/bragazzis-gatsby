@@ -3,13 +3,11 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 function Header({ location }) {
+  const headerClassName =
+    location.pathname === "/lastoria" ? "header header--dark" : "header"
+
   return (
-    <div
-      className={
-        location.pathname === "/lastoria" ? "header header--dark" : "header"
-      }
-      id="header"
-    >
+    <div className={headerClassName} id="header">
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo">
         <Link to="/">
