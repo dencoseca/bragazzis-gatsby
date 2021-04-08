@@ -88,7 +88,7 @@ function Ilgiorno({ location }) {
             src="../images/tom-and-joe-serving.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Mornings can be busy</div>
+          <div className="text text--display">Kick Off</div>
         </div>
         <StaticImage
           className="image image--50"
@@ -161,7 +161,7 @@ function Ilgiorno({ location }) {
             src="../images/busy-through-the-window.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Lunch just gets busier</div>
+          <div className="text text--display">Lunch</div>
         </div>
         <StaticImage
           className="image image--50"
@@ -259,7 +259,7 @@ function Ilgiorno({ location }) {
             src="../images/last-goodbyes-monochrome.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">The last goodbyes are said</div>
+          <div className="text text--display">Last goodbyes</div>
         </div>
         <StaticImage
           className="image image--50"
@@ -312,7 +312,7 @@ function Ilgiorno({ location }) {
             src="../images/tired-tom.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Saturdays are hard work</div>
+          <div className="text text--display">Tired people</div>
         </div>
         <StaticImage
           className="image image--50"
