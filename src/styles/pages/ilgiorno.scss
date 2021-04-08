@@ -20,7 +20,7 @@
       align-self: flex-end;
     }
 
-    &:nth-child(3n - 3) {
+    &:nth-child(3n + 3) {
       margin-left: 0vw;
       margin-right: 0vw;
     }
