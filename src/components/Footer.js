@@ -6,6 +6,8 @@ function Footer({ location }) {
     location.pathname === "/ilgiorno" ? "footer footer--light" : "footer"
   const textLinkClassName =
     location.pathname === "/ilgiorno" ? "text--link-light" : "text--link-dark"
+  const scrollToTopSpeed =
+    location.pathname === "/ilgiorno" ? 5000 : 1000
 
   return (
     <footer className={footerClassName}>
@@ -116,7 +118,12 @@ function Footer({ location }) {
         </div>
       </div>
       <div className="footer__scroll-to-top">
-        <ScrollToLink to="header" spy={true} smooth={true} duration={1000}>
+        <ScrollToLink
+          to="header"
+          spy={true}
+          smooth={true}
+          duration={scrollToTopSpeed}
+        >
           <svg
             className="footer__scroll-to-top"
             width="52"

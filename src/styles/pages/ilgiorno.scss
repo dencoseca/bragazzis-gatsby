@@ -48,14 +48,20 @@
   .image--with-caption {
     display: flex;
 
-    &.row-reverse {
-      flex-direction: row-reverse;
-    }
-
     .text {
       color: $white;
       align-self: center;
       text-transform: uppercase;
+      max-width: 22vw;
+      text-align: left;
+    }
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+
+      .text {
+        text-align: right;
+      }
     }
   }
 }
