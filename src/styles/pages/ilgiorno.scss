@@ -1,3 +1,14 @@
+.ilgiorno__black-background {
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+}
+
 .ilgiorno__title {
   margin: 8vw 0 0;
+  color: $white;
 }

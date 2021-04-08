@@ -5,23 +5,25 @@ import { StaticImage } from "gatsby-plugin-image"
 function Header({ location }) {
   return (
     <div
-      className={location.pathname === "/" ? "header" : "header header--dark"}
+      className={
+        location.pathname === "/lastoria" ? "header header--dark" : "header"
+      }
       id="header"
     >
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo">
         <Link to="/">
-          {location.pathname === "/" ? (
+          {location.pathname === "/lastoria" ? (
             <StaticImage
               className="header__logo"
-              src="../images/big-b-white.png"
+              src="../images/big-b-black.png"
               alt="logo"
               loading="eager"
             />
           ) : (
             <StaticImage
               className="header__logo"
-              src="../images/big-b-black.png"
+              src="../images/big-b-white.png"
               alt="logo"
               loading="eager"
             />

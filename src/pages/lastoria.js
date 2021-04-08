@@ -22,7 +22,6 @@ function LaStoria({ location }) {
               alt="plane ticket"
             />
           </div>
-
           <div className="lastoria__story">
             <p className="text--lg">
               Bragazzi’s opened in Sheffield in 2003 and is owned by Matteo

@@ -14,10 +14,11 @@ function Layout({ children, pageTitle, location }) {
   return (
     <>
       <SEO title={pageTitle} />
-      <main>
+      <main
+      >
         <Header location={location} />
         {children}
-        <Footer />
+        <Footer location={location} />
       </main>
     </>
   )
