@@ -56,8 +56,9 @@
       color: $white;
       align-self: center;
       text-transform: uppercase;
-      max-width: 22vw;
+      max-width: 25vw;
       text-align: left;
+      font-family: $textFont;
     }
 
     &.row-reverse {
