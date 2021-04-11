@@ -12,9 +12,11 @@
   align-items: center;
 }
 
-.menu__link {
+.menu__link-wrapper {
   margin: 8vw 0;
+}
 
+.menu__link {
   text-decoration: none;
   color: $white;
 }
