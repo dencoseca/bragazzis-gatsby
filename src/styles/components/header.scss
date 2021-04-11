@@ -37,10 +37,11 @@
     }
 
     @media (max-width: $mobile) {
+      position: relative;
       width: 40px;
-      left: 4vw;
       transform: translateX(0);
-      top: 4vw;
+      left: 0;
+      top: 0;
     }
   }
 
@@ -103,8 +104,19 @@
 
 .header__mobile-menu-button {
   display: none;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: $mobile) {
     display: block;
+  }
+
+  .line {
+    height: 1px;
+    background-color: $white;
+    width: 100%;
+    margin: 10px 0;
   }
 }

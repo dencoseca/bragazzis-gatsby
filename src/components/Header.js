@@ -36,7 +36,10 @@ function Header({ location }) {
           Il Giorno
         </Link>
       </nav>
-      <div className="header__mobile-menu-button"></div>
+      <div className="header__mobile-menu-button">
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
     </div>
   )
 }
