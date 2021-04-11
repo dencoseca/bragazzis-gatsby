@@ -49,10 +49,6 @@ function LaStoria({ location }) {
           <div className="lastoria__image">
             <StaticImage src="../images/early-days.jpg" alt="A busy cafe" />
           </div>
-          <div className="lastoria__statement text--display">
-            <div>If you build it, they will come...</div>
-            <div>and drink espresso</div>
-          </div>
         </div>
       </Layout>
     </>

@@ -11,13 +11,12 @@ function Ilgiorno({ location }) {
     <Layout pageTitle="Il Giorno" location={location}>
       <div className="ilgiorno__title text--page-title">IL GIORNO</div>
       <div className="ilgiorno__gallery">
-        <GalleryImageWithCaption rowReverse={false}>
+        <GalleryImageWithCaption rowReverse={false} caption="Aperto">
           <StaticImage
             className="image image--60"
             src="../images/aperto.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Aperto</div>
         </GalleryImageWithCaption>
         <GalleryImage imageWidth="50">
           <StaticImage src="../images/window-clouds.jpg" alt="cafe view" />
@@ -67,13 +66,12 @@ function Ilgiorno({ location }) {
         <GalleryImage imageWidth="45">
           <StaticImage src="../images/pav.jpg" alt="cafe view" />
         </GalleryImage>
-        <GalleryImageWithCaption rowReverse={false}>
+        <GalleryImageWithCaption rowReverse={false} caption="Kick Off">
           <StaticImage
             className="image image--60"
             src="../images/tom-and-joe-serving.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Kick Off</div>
         </GalleryImageWithCaption>
         <GalleryImage imageWidth="55">
           <StaticImage src="../images/toms-head.jpg" alt="cafe view" />
@@ -126,13 +124,12 @@ function Ilgiorno({ location }) {
         <GalleryImage imageWidth="50">
           <StaticImage src="../images/through-the-hatch.jpg" alt="cafe view" />
         </GalleryImage>
-        <GalleryImageWithCaption rowReverse={false}>
+        <GalleryImageWithCaption rowReverse={false} caption="Lunch">
           <StaticImage
             className="image image--60"
             src="../images/busy-through-the-window.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Lunch</div>
         </GalleryImageWithCaption>
         <GalleryImage imageWidth="45">
           <StaticImage src="../images/cock-shot.jpg" alt="cafe view" />
@@ -203,13 +200,12 @@ function Ilgiorno({ location }) {
         <GalleryImage imageWidth="50">
           <StaticImage src="../images/eating-salad.jpg" alt="cafe view" />
         </GalleryImage>
-        <GalleryImageWithCaption rowReverse={true}>
+        <GalleryImageWithCaption rowReverse={true} caption="Last Goodbyes">
           <StaticImage
             className="image image--60"
             src="../images/last-goodbyes-monochrome.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Last goodbyes</div>
         </GalleryImageWithCaption>
         <GalleryImage imageWidth="50">
           <StaticImage
@@ -253,13 +249,12 @@ function Ilgiorno({ location }) {
         <GalleryImage imageWidth="65">
           <StaticImage src="../images/empty-cafe-ior.jpg" alt="cafe view" />
         </GalleryImage>
-        <GalleryImageWithCaption rowReverse={false}>
+        <GalleryImageWithCaption rowReverse={false} caption="Tired People">
           <StaticImage
             className="image image--55"
             src="../images/tired-tom.jpg"
             alt="cafe view"
           />
-          <div className="text text--display">Tired people</div>
         </GalleryImageWithCaption>
         <GalleryImage imageWidth="50">
           <StaticImage src="../images/tired-leon.jpg" alt="cafe view" />

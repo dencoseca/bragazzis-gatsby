@@ -2,6 +2,11 @@ import React, { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
+const smoothTransition = {
+  duration: 1.1,
+  ease: [0.43, 0.13, 0.13, 0.96],
+}
+
 const imageVariants = {
   hidden: {
     opacity: 0,
@@ -10,19 +15,19 @@ const imageVariants = {
   visible: {
     opacity: 1,
     translateY: 0,
+    transition: {
+      ...smoothTransition,
+    },
   },
 }
 
-function GalleryImageWithCaption({ children, rowReverse }) {
+function GalleryImageWithCaption({ children, rowReverse, caption }) {
   const controls = useAnimation()
   const { ref, inView } = useInView()
 
   useEffect(() => {
     if (inView) {
       controls.start("visible")
-    }
-    if (!inView) {
-      controls.start("hidden")
     }
   }, [controls, inView])
 
@@ -35,6 +40,7 @@ function GalleryImageWithCaption({ children, rowReverse }) {
       className={`image--with-caption ${rowReverse ? "row-reverse" : null}`}
     >
       {children}
+      <div className="text text--display">{caption}</div>
     </motion.div>
   )
 }
