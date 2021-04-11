@@ -14,6 +14,7 @@ const menuVariants = {
     // opacity: 0,
     transition: {
       ...smoothTransition,
+      duration: 0.4,
     },
   },
   open: {
@@ -41,7 +42,7 @@ const linkVariants = {
     translateX: 0,
     transition: {
       ...smoothTransition,
-      duration: 0.9,
+      duration: 0.6,
     },
   },
 }

@@ -213,8 +213,6 @@ $textFont: "Josefin Sans", sans-serif;
 }
 
 .text--menu-link {
-  font-family: $textFont;
-  font-size: 12vw;
-  text-transform: uppercase;
-
+  font-family: $displayFont;
+  font-size: 18vw;
 }
