@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { AnimatePresence } from "framer-motion"
 
 // Components
 import Footer from "./Footer"
@@ -8,7 +9,7 @@ import Menu from "./Menu"
 
 function Layout({ children, pageTitle, location }) {
   const mainBackgroundColor =
-    location.pathname === "/ilgiorno" ? "#1d1d1d" : "#ffffff"
+    location.pathname === "/ilgiorno" ? "#1d1d1d" : "#fff"
 
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
@@ -20,7 +21,9 @@ function Layout({ children, pageTitle, location }) {
   return (
     <>
       <SEO title={pageTitle} />
-      {menuIsOpen && <Menu />}
+      <AnimatePresence exitBeforeEnter>
+        {menuIsOpen && <Menu />}
+      </AnimatePresence>
       <main
         style={{
           backgroundColor: mainBackgroundColor,
