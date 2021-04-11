@@ -9,7 +9,7 @@ function Header({ location }) {
   return (
     <div className={headerClassName} id="header">
       <div className="header__tag">Purveyors of quality Italian goods</div>
-      <div className="header__logo">
+      <div className="header__logo-wrapper">
         <Link to="/">
           {location.pathname === "/lastoria" ? (
             <StaticImage
@@ -36,6 +36,7 @@ function Header({ location }) {
           Il Giorno
         </Link>
       </nav>
+      <div className="header__mobile-menu-button"></div>
     </div>
   )
 }

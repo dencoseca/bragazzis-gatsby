@@ -42,9 +42,8 @@
   overflow: hidden;
 
   @media (max-width: $tablet) {
-    top: 15vw;
+    top: 25vw;
   }
- 
 }
 
 // ==========================
@@ -71,34 +70,6 @@
     text-align: center;
   }
 
-  // .tag {
-  //   position: absolute;
-  //   top: 3vw;
-  //   text-transform: uppercase;
-
-  //   &.left {
-  //     left: 3vw;
-  //   }
-
-  //   &.right {
-  //     right: 3vw;
-  //     text-align: right;
-  //   }
-
-  //   @media (max-width: $mobile) {
-  //     &.left {
-  //       left: 50%;
-  //       transform: translateX(-50%);
-  //       width: 100%;
-  //       top: 10vw;
-  //     }
-
-  //     &.right {
-  //       display: none;
-  //     }
-  //   }
-  // }
-
   .opening-hours {
     position: absolute;
     left: 3vw;
@@ -106,6 +77,8 @@
 
     @media (max-width: $tablet) {
       font-size: 2vw;
+      left: 5vw;
+      bottom: 5vw;
     }
 
     @media (max-width: $mobile) {
@@ -121,12 +94,14 @@
 
     @media (max-width: $tablet) {
       font-size: 2vw;
+      right: 5vw;
+      bottom: 5vw;
     }
 
     @media (max-width: $mobile) {
       left: 50%;
       transform: translateX(-50%);
-      top: 35vw;
+      top: 45vw;
       text-align: center;
       text-transform: uppercase;
       width: fit-content;

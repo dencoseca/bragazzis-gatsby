@@ -11,17 +11,37 @@
   font-weight: 400;
   line-height: 0.95vw;
 
+  @media (max-width: $tablet) {
+    padding: 5vw;
+    font-size: 1.5vw;
+  }
+
   .header__tag {
     text-transform: uppercase;
     color: $white;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
-  .header__logo {
-    width: 4vw;
+  .header__logo-wrapper {
+    width: 70px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 1vw;
+    top: 1.5vw;
+
+    @media (max-width: $tablet) {
+      width: 50px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 40px;
+      left: 4vw;
+      transform: translateX(0);
+      top: 4vw;
+    }
   }
 
   .header__link {
@@ -54,6 +74,10 @@
         background-color: $white;
       }
     }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &--dark {
@@ -74,5 +98,13 @@
         }
       }
     }
+  }
+}
+
+.header__mobile-menu-button {
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: block;
   }
 }
