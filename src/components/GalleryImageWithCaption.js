@@ -13,7 +13,7 @@ const imageVariants = {
   },
 }
 
-function GalleryImage({ children, rowReverse }) {
+function GalleryImageWithCaption({ children, rowReverse }) {
   const controls = useAnimation()
   const { ref, inView } = useInView()
 
@@ -39,4 +39,4 @@ function GalleryImage({ children, rowReverse }) {
   )
 }
 
-export default GalleryImage
+export default GalleryImageWithCaption

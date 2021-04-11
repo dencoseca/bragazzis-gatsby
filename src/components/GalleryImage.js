@@ -13,7 +13,7 @@ const imageVariants = {
   },
 }
 
-function GalleryImageWithCaption({ children, imageWidth }) {
+function GalleryImage({ children, imageWidth }) {
   const controls = useAnimation()
   const { ref, inView } = useInView()
 
@@ -39,4 +39,4 @@ function GalleryImageWithCaption({ children, imageWidth }) {
   )
 }
 
-export default GalleryImageWithCaption
+export default GalleryImage
