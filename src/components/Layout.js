@@ -1,13 +1,16 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 
 // Components
 import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./SEO"
+import Menu from "./Menu"
 
 function Layout({ children, pageTitle, location }) {
   const mainBackgroundColor =
     location.pathname === "/ilgiorno" ? "#1d1d1d" : "#ffffff"
+
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
 
   useEffect(() => {
     // Prevent flashing
@@ -17,12 +20,17 @@ function Layout({ children, pageTitle, location }) {
   return (
     <>
       <SEO title={pageTitle} />
+      {menuIsOpen && <Menu />}
       <main
         style={{
           backgroundColor: mainBackgroundColor,
         }}
       >
-        <Header location={location} />
+        <Header
+          location={location}
+          menuIsOpen={menuIsOpen}
+          setMenuIsOpen={setMenuIsOpen}
+        />
         {children}
         <Footer location={location} />
       </main>
