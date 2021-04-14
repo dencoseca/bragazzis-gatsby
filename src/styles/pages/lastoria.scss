@@ -24,6 +24,10 @@
   padding: 8vw 0 0;
   position: relative;
   z-index: 1;
+
+  @media (max-width: $mobile) {
+    padding-top: 20vw;
+  }
 }
 
 .lastoria__statement {

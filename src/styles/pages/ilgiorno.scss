@@ -1,6 +1,10 @@
 .ilgiorno__title {
   padding: 8vw 0 0;
   color: $white;
+
+  @media (max-width: $mobile) {
+    padding-top: 20vw;
+  }
 }
 
 .ilgiorno__gallery {
