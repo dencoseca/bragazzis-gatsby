@@ -79,8 +79,8 @@ function LaStoria({ location }) {
             <div className="lastoria__story">
               <p className="text--lg">
                 Bragazzi’s opened in Sheffield in 2003 and is owned by Matteo
-                Bragazzi. Bragazzi’s is an outlier and safe haven for people who
-                enjoy the “qualcosa in più“.
+                Bragazzi. It is an outlier and safe haven for people who enjoy
+                the “qualcosa in più“.
               </p>
               <div className="line"></div>
               <p className="text--lg">

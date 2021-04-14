@@ -84,6 +84,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
             className="header__logo"
             image={logoImage}
             alt="bragazzi's logo"
+            loading="eager"
           />
         </Link>
       </div>
