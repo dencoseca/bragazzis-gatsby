@@ -38,6 +38,7 @@
 
     @media (max-width: $mobile) {
       flex-direction: column-reverse;
+      padding-bottom: 1vw;
     }
 
     .text {
@@ -63,6 +64,10 @@
 
       .text {
         text-align: right;
+
+        @media (max-width: $mobile) {
+          text-align: center;
+        }
       }
     }
   }
