@@ -48,13 +48,16 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
     }
   `)
 
-  const headerClassName =
-    location.pathname === "/lastoria" ? "header header--dark" : "header"
+  const headerClassName = location.pathname.includes("/lastoria")
+    ? "header header--dark"
+    : "header"
   const menuButtonLineColor =
-    location.pathname === "/lastoria" && !menuIsOpen ? "#1d1d1d" : "#f6f4f1"
+    location.pathname.includes("/lastoria") && !menuIsOpen
+      ? "#1d1d1d"
+      : "#f6f4f1"
   const headerPosition = menuIsOpen ? "fixed" : "absolute"
   const logoImage =
-    location.pathname === "/lastoria" && !menuIsOpen
+    location.pathname.includes("/lastoria") && !menuIsOpen
       ? data.bigBBlack.childImageSharp.gatsbyImageData
       : data.bigBWhite.childImageSharp.gatsbyImageData
 

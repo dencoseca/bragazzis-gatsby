@@ -8,8 +8,9 @@ import SEO from "./SEO"
 import Menu from "./Menu"
 
 function Layout({ children, pageTitle, location }) {
-  const mainBackgroundColor =
-    location.pathname === "/ilgiorno" ? "#1d1d1d" : "#fff"
+  const mainBackgroundColor = location.pathname.includes("/ilgiorno")
+    ? "#1d1d1d"
+    : "#fff"
 
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
