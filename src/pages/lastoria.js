@@ -60,6 +60,7 @@ function LaStoria({ location }) {
                 <StaticImage
                   src="../images/ticket-roma.jpg"
                   alt="plane ticket"
+                  loading="eager"
                 />
               </motion.div>
               <motion.div
@@ -71,6 +72,7 @@ function LaStoria({ location }) {
                 <StaticImage
                   src="../images/ticket-pisa.jpg"
                   alt="plane ticket"
+                  loading="eager"
                 />
               </motion.div>
             </div>
