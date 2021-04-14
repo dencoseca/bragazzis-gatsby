@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { motion, useAnimation } from "framer-motion"
 
 // Animations
@@ -32,11 +32,31 @@ const bottomLineVariants = {
 }
 
 function Header({ location, menuIsOpen, setMenuIsOpen }) {
+  // Assets
+  const data = useStaticQuery(graphql`
+    query {
+      bigBBlack: file(relativePath: { eq: "big-b-black.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      bigBWhite: file(relativePath: { eq: "big-b-white.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  `)
+
   const headerClassName =
     location.pathname === "/lastoria" ? "header header--dark" : "header"
   const menuButtonLineColor =
     location.pathname === "/lastoria" && !menuIsOpen ? "#1d1d1d" : "#f6f4f1"
   const headerPosition = menuIsOpen ? "fixed" : "absolute"
+  const logoImage =
+    location.pathname === "/lastoria" && !menuIsOpen
+      ? data.bigBBlack.childImageSharp.gatsbyImageData
+      : data.bigBWhite.childImageSharp.gatsbyImageData
 
   const controls = useAnimation()
 
@@ -60,21 +80,11 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo-wrapper">
         <Link to="/">
-          {location.pathname === "/lastoria" && !menuIsOpen ? (
-            <StaticImage
-              className="header__logo"
-              src="../images/big-b-black.png"
-              alt="logo"
-              loading="eager"
-            />
-          ) : (
-            <StaticImage
-              className="header__logo"
-              src="../images/big-b-white.png"
-              alt="logo"
-              loading="eager"
-            />
-          )}
+          <GatsbyImage
+            className="header__logo"
+            image={logoImage}
+            alt="bragazzi's logo"
+          />
         </Link>
       </div>
       <nav className="header__nav">

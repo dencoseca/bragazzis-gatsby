@@ -21,9 +21,7 @@ function Layout({ children, pageTitle, location }) {
   return (
     <>
       <SEO title={pageTitle} />
-      <AnimatePresence exitBeforeEnter>
-        {menuIsOpen && <Menu />}
-      </AnimatePresence>
+      <AnimatePresence>{menuIsOpen && <Menu />}</AnimatePresence>
       <main
         style={{
           backgroundColor: mainBackgroundColor,
