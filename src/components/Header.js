@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { motion, useAnimation } from "framer-motion"
@@ -50,6 +50,10 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
       controls.start("open")
     }
   }
+
+  useEffect(() => {
+    setMenuIsOpen(false)
+  }, [])
 
   return (
     <div
