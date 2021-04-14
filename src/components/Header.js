@@ -36,6 +36,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
     location.pathname === "/lastoria" ? "header header--dark" : "header"
   const menuButtonLineColor =
     location.pathname === "/lastoria" && !menuIsOpen ? "#1d1d1d" : "#f6f4f1"
+  const headerPosition = menuIsOpen ? "fixed" : "absolute"
 
   const controls = useAnimation()
 
@@ -51,7 +52,11 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
   }
 
   return (
-    <div className={headerClassName} id="header">
+    <div
+      className={headerClassName}
+      id="header"
+      style={{ position: headerPosition }}
+    >
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo-wrapper">
         <Link to="/">

@@ -11,7 +11,7 @@ const smoothTransition = {
 const menuVariants = {
   closed: {
     translateX: "-100%",
-    // opacity: 0,
+    overflow: "visible",
     transition: {
       ...smoothTransition,
       duration: 0.4,
@@ -19,7 +19,7 @@ const menuVariants = {
   },
   open: {
     translateX: "0%",
-    // opacity: 1,
+    overflow: "hidden",
     transition: {
       ...smoothTransition,
       staggerChildren: 0.2,
