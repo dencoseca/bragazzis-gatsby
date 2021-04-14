@@ -34,6 +34,8 @@ const bottomLineVariants = {
 function Header({ location, menuIsOpen, setMenuIsOpen }) {
   const headerClassName =
     location.pathname === "/lastoria" ? "header header--dark" : "header"
+  const menuButtonLineColor =
+    location.pathname === "/lastoria" && !menuIsOpen ? "#1d1d1d" : "#f6f4f1"
 
   const controls = useAnimation()
 
@@ -53,7 +55,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo-wrapper">
         <Link to="/">
-          {location.pathname === "/lastoria" ? (
+          {location.pathname === "/lastoria" && !menuIsOpen ? (
             <StaticImage
               className="header__logo"
               src="../images/big-b-black.png"
@@ -85,6 +87,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
           animate={controls}
           variants={topLineVariants}
           transition={smoothTransition}
+          style={{ backgroundColor: menuButtonLineColor }}
         ></motion.div>
         <motion.div
           className="line"
@@ -92,6 +95,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
           animate={controls}
           variants={bottomLineVariants}
           transition={smoothTransition}
+          style={{ backgroundColor: menuButtonLineColor }}
         ></motion.div>
       </div>
     </div>

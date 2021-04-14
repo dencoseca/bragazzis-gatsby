@@ -10,12 +10,20 @@
       left: -5vw;
       transform: rotate(-25deg);
       top: 50vw;
+
+      @media (max-width: $mobile) {
+        top: 70vw;
+      }
     }
 
     &.right {
       right: -5vw;
       transform: rotate(25deg);
       top: 90vw;
+
+      @media (max-width: $mobile) {
+        top: 133vw;
+      }
     }
   }
 }
@@ -38,9 +46,17 @@
   margin: 10vw 20vw 4vw;
   text-align: center;
 
+  @media (max-width: $mobile) {
+    margin: 10vw;
+  }
+
   p {
     width: 45vw;
     margin: 3vw auto;
+
+    @media (max-width: $mobile) {
+      width: 80vw;
+    }
   }
 
   .line {
@@ -54,4 +70,9 @@
 .lastoria__image {
   margin: 0 auto;
   width: 50vw;
+
+  @media (max-width: $mobile) {
+    width: 100vw;
+    margin-bottom: 10vw;
+  }
 }
