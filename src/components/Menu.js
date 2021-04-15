@@ -42,7 +42,7 @@ const linkVariants = {
     translateX: 0,
     transition: {
       ...smoothTransition,
-      duration: 0.6,
+      duration: 0.5,
     },
   },
 }
