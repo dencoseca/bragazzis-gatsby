@@ -93,6 +93,12 @@ function Ilgiorno({ location }) {
           />
         </GalleryImage>
         <GalleryImage imageWidth="50">
+          <StaticImage src="../images/panettone.jpg" alt="panettone" />
+        </GalleryImage>
+        <GalleryImage imageWidth="40">
+          <StaticImage src="../images/pasta-stacked.jpg" alt="stacked pasta" />
+        </GalleryImage>
+        <GalleryImage imageWidth="50">
           <StaticImage
             src="../images/sofa-through-window.jpg"
             alt="customers talking"
@@ -140,6 +146,13 @@ function Ilgiorno({ location }) {
             alt="customers browsing the shelves"
           />
         </GalleryImage>
+        <GalleryImage imageWidth="40">
+          <StaticImage src="../images/farfalle.jpg" alt="farfalle" />
+        </GalleryImage>
+        <GalleryImage imageWidth="70">
+          <StaticImage src="../images/moped.jpg" alt="moped" />
+        </GalleryImage>
+
         <GalleryImage imageWidth="55">
           <StaticImage
             src="../images/tom-and-joe-laughing.jpg"
@@ -163,6 +176,12 @@ function Ilgiorno({ location }) {
             src="../images/cafe-view.jpg"
             alt="view of the busy cafe"
           />
+        </GalleryImage>
+        <GalleryImage imageWidth="55">
+          <StaticImage src="../images/tomatoes.jpg" alt="tomatoes" />
+        </GalleryImage>
+        <GalleryImage imageWidth="50">
+          <StaticImage src="../images/carrots.jpg" alt="carrots" />
         </GalleryImage>
         <GalleryImage imageWidth="40">
           <StaticImage
