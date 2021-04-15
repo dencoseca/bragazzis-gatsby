@@ -5,11 +5,13 @@ function Footer({ location }) {
   const footerClassName = location.pathname.includes("/ilgiorno")
     ? "footer footer--light"
     : "footer"
-  const textLinkClassName =
-    location.pathname.includes("/ilgiorno") ? "text--link-light" : "text--link-dark"
-  const scrollToTopSpeed = location.pathname.includes("/ilgiorno") ? 5000 : 1000
-  const scrollToTopFillColor =
-    location.pathname.includes("/ilgiorno") ? "#f6f4f1" : "#1d1d1d"
+  const textLinkClassName = location.pathname.includes("/ilgiorno")
+    ? "text--link-light"
+    : "text--link-dark"
+  const scrollToTopSpeed = location.pathname.includes("/ilgiorno") ? 3000 : 1000
+  const scrollToTopFillColor = location.pathname.includes("/ilgiorno")
+    ? "#f6f4f1"
+    : "#1d1d1d"
 
   return (
     <footer className={footerClassName}>
