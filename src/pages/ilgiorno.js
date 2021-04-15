@@ -10,7 +10,9 @@ function Ilgiorno({ location }) {
     <Layout pageTitle="Il Giorno" location={location}>
       <div className="ilgiorno__title text--page-title">IL GIORNO</div>
       <div className="ilgiorno__gallery">
-        <div className="ilgiorno__caption text--display">Aperto</div>
+        <div className="ilgiorno__caption ilgiorno__caption--aperto text--display">
+          Aperto
+        </div>
         <GalleryImage imageWidth="60">
           <StaticImage
             src="../images/aperto.jpg"
@@ -300,7 +302,9 @@ function Ilgiorno({ location }) {
             alt="empty cafe at the end of the day"
           />
         </GalleryImage>
-        <div className="ilgiorno__caption text--display">Chiuso</div>
+        <div className="ilgiorno__caption ilgiorno__caption--chiuso text--display">
+          Chiuso
+        </div>
       </div>
     </Layout>
   )

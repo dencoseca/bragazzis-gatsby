@@ -77,8 +77,16 @@
 
 .ilgiorno__caption {
   color: $white;
+}
 
+.ilgiorno__caption--aperto {
   @media (max-width: $mobile) {
-    margin: 10vw 0;
+    margin-bottom: 8vw;
+  }
+}
+
+.ilgiorno__caption--chiuso {
+  @media (max-width: $mobile) {
+    margin-top: 8vw;
   }
 }
