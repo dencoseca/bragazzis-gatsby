@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 8vw;
+  margin-bottom: 5vw;
 
   @media (max-width: $mobile) {
     margin-bottom: 10vw;
@@ -23,11 +24,11 @@
       margin: 0;
     }
 
-    &:nth-of-type(even) {
+    &:nth-of-type(odd) {
       align-self: flex-end;
     }
 
-    &:nth-of-type(3n - 3) {
+    &:nth-of-type(3n - 1) {
       margin-left: 0vw;
       margin-right: 0vw;
     }
@@ -72,4 +73,8 @@
       width: 100vw;
     }
   }
+}
+
+.ilgiorno__caption {
+  color: $white;
 }
