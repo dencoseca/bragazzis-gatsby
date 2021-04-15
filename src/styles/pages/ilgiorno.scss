@@ -80,13 +80,17 @@
 }
 
 .ilgiorno__caption--aperto {
+  margin-bottom: 2vw;
+
   @media (max-width: $mobile) {
     margin-bottom: 8vw;
   }
 }
 
 .ilgiorno__caption--chiuso {
+  margin-top: 5vw;
+
   @media (max-width: $mobile) {
-    margin-top: 8vw;
+    margin-top: 20vw;
   }
 }
