@@ -77,4 +77,8 @@
 
 .ilgiorno__caption {
   color: $white;
+
+  @media (max-width: $mobile) {
+    margin: 10vw 0;
+  }
 }
