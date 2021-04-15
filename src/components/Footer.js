@@ -8,7 +8,7 @@ function Footer({ location }) {
   const textLinkClassName = location.pathname.includes("/ilgiorno")
     ? "text--link-light"
     : "text--link-dark"
-  const scrollToTopSpeed = location.pathname.includes("/ilgiorno") ? 3000 : 1000
+  const scrollToTopSpeed = location.pathname.includes("/ilgiorno") ? 0 : 1000
   const scrollToTopFillColor = location.pathname.includes("/ilgiorno")
     ? "#f6f4f1"
     : "#1d1d1d"
