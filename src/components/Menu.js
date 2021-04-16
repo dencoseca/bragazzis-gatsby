@@ -58,7 +58,7 @@ function Menu() {
     >
       <motion.div className="menu__link-wrapper" variants={linkVariants}>
         <Link className="menu__link text--menu-link" to="/">
-          Home
+          Il Caffè
         </Link>
       </motion.div>
       <motion.div className="menu__link-wrapper" variants={linkVariants}>
