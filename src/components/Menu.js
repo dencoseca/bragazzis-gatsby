@@ -22,8 +22,8 @@ const menuVariants = {
     overflow: "hidden",
     transition: {
       ...smoothTransition,
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
     },
   },
 }
