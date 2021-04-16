@@ -82,7 +82,13 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
           Il Giorno
         </Link>
       </nav>
-      <div className="header__mobile-menu-button" onClick={() => toggleMenu()}>
+      <div
+        className="header__mobile-menu-button"
+        onClick={() => toggleMenu()}
+        onKeyPress={() => toggleMenu()}
+        role="button"
+        tabIndex={0}
+      >
         <motion.div
           className="line"
           initial="closed"
