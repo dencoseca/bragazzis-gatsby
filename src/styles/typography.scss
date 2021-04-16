@@ -73,6 +73,7 @@ $textFont: "Josefin Sans", sans-serif;
 // Global text styles
 // ===================
 
+// Display
 .text--page-title {
   font-family: $displayFont;
   font-size: 16.5vw;
@@ -84,6 +85,17 @@ $textFont: "Josefin Sans", sans-serif;
   }
 }
 
+.text--display {
+  font-family: $displayFont;
+  font-size: 4vw;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    font-size: 8.5vw;
+  }
+}
+
+// Copy
 .text--sm {
   font-size: 1vw;
   font-weight: 300;
@@ -129,16 +141,6 @@ $textFont: "Josefin Sans", sans-serif;
   }
 }
 
-.text--display {
-  font-family: $displayFont;
-  font-size: 4vw;
-  text-align: center;
-
-  @media (max-width: $mobile) {
-    font-size: 8.5vw;
-  }
-}
-
 .text--initial {
   font-family: $displayFont;
   font-size: 6vw;
@@ -149,6 +151,7 @@ $textFont: "Josefin Sans", sans-serif;
   }
 }
 
+// Links
 .text--heading-sm {
   font-family: $displayFont;
   font-size: 1.25vw;

@@ -1,6 +1,9 @@
 .footer {
   color: $black;
 
+  // ====================
+  // General List Styles
+  // ====================
   .footer__lists {
     display: flex;
     justify-content: space-between;
@@ -41,6 +44,9 @@
       }
     }
 
+    // =====================
+    // Specific List Styles
+    // =====================
     .site {
       text-align: center;
     }
