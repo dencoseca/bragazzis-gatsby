@@ -1,26 +1,20 @@
 import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
 
+// Utils
+import debounce from "../utils/debounce"
+
 // Components
 import Cover from "../components/Cover"
 import FloatingItems from "../components/FloatingItems"
 import FullWidthBanner from "../components/FullWidthBanner"
 import Layout from "../components/Layout"
 
-function debounce(fn, ms) {
-  let timer
-  return () => {
-    clearTimeout(timer)
-    timer = setTimeout(() => {
-      timer = null
-      fn.apply(this, arguments)
-    }, ms)
-  }
-}
-
 function Home({ data, location }) {
+  // Extract opening hours from gatsby-source-google-places query
   const openingHours =
     data.allGooglePlacesPlace.edges[0].node.opening_hours.weekday_text
+  // Setup breakpoints and dimensions for responsive layout
   const breakpoints = {
     mobile: 760,
     tablet: 1080,
@@ -32,11 +26,11 @@ function Home({ data, location }) {
     vw: 100,
   })
 
-  // Set initial values as soon as page loads
   useEffect(() => {
     // Prevent flashing
     document.querySelector("main").classList.add("visible")
 
+    // Set initial values as soon as page loads to prevent a null value on initial hydration
     setDimensions({
       height: window.innerHeight,
       width: window.innerWidth,
@@ -120,6 +114,7 @@ function Home({ data, location }) {
 
 export default Home
 
+// Setup gatsby-source-google-places query
 export const query = graphql`
   query {
     allGooglePlacesPlace {
