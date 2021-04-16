@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
+// Animations
 const smoothTransition = {
   duration: 1.1,
   ease: [0.43, 0.13, 0.13, 0.96],

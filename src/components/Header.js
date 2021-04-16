@@ -31,15 +31,14 @@ const bottomLineVariants = {
 }
 
 function Header({ location, menuIsOpen, setMenuIsOpen }) {
-  const headerClassName = location.pathname.includes("/lastoria")
-    ? "header header--dark"
-    : "header"
-  const menuColor =
-    location.pathname.includes("/lastoria") && !menuIsOpen
-      ? "#1d1d1d"
-      : "#f6f4f1"
+  // Grab page by location
+  const pageIsLastoria = location.pathname.includes("/lastoria")
+  // Setup style variables based on loaction
+  const headerClassName = pageIsLastoria ? "header header--dark" : "header"
+  const menuColor = pageIsLastoria && !menuIsOpen ? "#1d1d1d" : "#f6f4f1"
   const headerPosition = menuIsOpen ? "fixed" : "absolute"
 
+  // Setup menu state animations
   const controls = useAnimation()
 
   function toggleMenu() {

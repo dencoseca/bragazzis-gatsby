@@ -11,6 +11,7 @@ function FullWidthBanner({
   dimensions: { width, vh },
   breakpoints: { mobile, tablet },
 }) {
+  // Set style variables for scroll animations
   const { scrollYProgress } = useViewportScroll()
   const textScrollLaptop = useTransform(
     scrollYProgress,
@@ -22,6 +23,9 @@ function FullWidthBanner({
     [0.7, 1],
     [vh * -1, vh * 3]
   )
+  // Responsive selection of scroll aniamtion
+  const textScrollTranslateYValue =
+    width >= tablet ? textScrollLaptop : width >= mobile ? textScrollTablet : 0
 
   return (
     <AnimatePresence>
@@ -36,12 +40,7 @@ function FullWidthBanner({
         <motion.article
           className="full-width-banner__text"
           style={{
-            translateY:
-              width >= tablet
-                ? textScrollLaptop
-                : width >= mobile
-                ? textScrollTablet
-                : 0,
+            translateY: textScrollTranslateYValue,
             translateX: "-50%",
           }}
         >

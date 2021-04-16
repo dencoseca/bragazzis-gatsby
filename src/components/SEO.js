@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
+// Setup query for site metadata
 const query = graphql`
   query SEO {
     site {
@@ -20,6 +21,7 @@ const query = graphql`
 `
 
 function SEO({ title, description, image, article }) {
+  // Grab site metadata from Gatsby config and current page
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -32,6 +34,7 @@ function SEO({ title, description, image, article }) {
     logo,
   } = site.siteMetadata
 
+  // Create SEO object based on whether required data exists
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
@@ -40,6 +43,7 @@ function SEO({ title, description, image, article }) {
     logo,
   }
 
+  // Setup JSON-LD
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",

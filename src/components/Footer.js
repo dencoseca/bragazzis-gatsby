@@ -2,16 +2,15 @@ import React from "react"
 import { Link as ScrollToLink } from "react-scroll"
 
 function Footer({ location }) {
-  const footerClassName = location.pathname.includes("/ilgiorno")
-    ? "footer footer--light"
-    : "footer"
-  const textLinkClassName = location.pathname.includes("/ilgiorno")
+  // Grab the location conditional
+  const pageIsIlgiorno = location.pathname.includes("/ilgiorno")
+  // Set the style variables based on location
+  const footerClassName = pageIsIlgiorno ? "footer footer--light" : "footer"
+  const textLinkClassName = pageIsIlgiorno
     ? "text--link-light"
     : "text--link-dark"
-  const scrollToTopSpeed = location.pathname.includes("/ilgiorno") ? 0 : 1000
-  const scrollToTopFillColor = location.pathname.includes("/ilgiorno")
-    ? "#f6f4f1"
-    : "#1d1d1d"
+  const scrollToTopSpeed = pageIsIlgiorno ? 0 : 1000
+  const scrollToTopFillColor = pageIsIlgiorno ? "#f6f4f1" : "#1d1d1d"
 
   return (
     <footer className={footerClassName}>

@@ -8,6 +8,7 @@ import {
 } from "framer-motion"
 
 function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
+  // Set style variables for scroll animations
   const { scrollYProgress } = useViewportScroll()
   let item1Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -59])
   let item2Scroll = useTransform(scrollYProgress, [0, 1], [0, vw * -118])

@@ -14,11 +14,6 @@ const smoothTransition = {
   ease: [0.43, 0.13, 0.13, 0.96],
 }
 
-// const fastTransition = {
-//   duration: 1,
-//   ease: [0.6, 0.01, -0.05, 0.9],
-// }
-
 const contentVariants = {
   initial: {
     opacity: 0,
@@ -69,6 +64,7 @@ function Cover({
   dimensions: { width, vh },
   breakpoints: { mobile },
 }) {
+  // Set style controls for scroll animations
   const { scrollYProgress } = useViewportScroll()
   const heroImageScroll = useTransform(scrollYProgress, [0, 1], [0, vh * 59])
 
@@ -108,8 +104,6 @@ function Cover({
           initial="initial"
           animate="animate"
         >
-          {/* <div className="tag left">Purveyors of quality Italian goods</div>
-          <div className="tag right">Cafe, shop and delicatessen</div> */}
           <div className="opening-hours">
             {openingHours.map((line, index) => (
               <p key={index}>{line}</p>
