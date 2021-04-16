@@ -28,6 +28,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
             alt="delicious focaccia sandwiches"
             loading="eager"
             objectFit="cover"
+            onContextMenu={e => e.preventDefault()}
           />
           <div className="item__text">
             <p className="text--md">
@@ -60,6 +61,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
             alt="silky coffee being poured"
             loading="eager"
             objectFit="cover"
+            onContextMenu={e => e.preventDefault()}
           />
           <div className="item__text">
             <p className="text--md">
@@ -82,6 +84,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
             alt="fresh salad being plated"
             loading="eager"
             objectFit="cover"
+            onContextMenu={e => e.preventDefault()}
           />
           <div className="item__text">
             <p className="text--md">
@@ -102,6 +105,7 @@ function FloatingItems({ dimensions: { width, vw }, breakpoints: { mobile } }) {
             alt="a beautifully stocked italian dry goods shop"
             loading="eager"
             objectFit="cover"
+            onContextMenu={e => e.preventDefault()}
           />
           <div className="item__text">
             <p className="text--md">

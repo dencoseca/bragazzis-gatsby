@@ -87,7 +87,7 @@ function Cover({
             style={{
               translateY: heroImageScroll,
             }}
-          >
+            >
             <StaticImage
               className="cover__image"
               src="../images/parmesan.jpg"
@@ -95,6 +95,7 @@ function Cover({
               layout="fullWidth"
               loading="eager"
               placeholder="#1d1d1d"
+              onContextMenu={e => e.preventDefault()}
             />
           </motion.div>
         </div>

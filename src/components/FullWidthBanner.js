@@ -36,6 +36,7 @@ function FullWidthBanner({
           alt="a gigantic italian chocolate easter egg"
           layout="fullWidth"
           loading="eager"
+          onContextMenu={e => e.preventDefault()}
         />
         <motion.article
           className="full-width-banner__text"

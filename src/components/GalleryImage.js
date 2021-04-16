@@ -39,6 +39,7 @@ function GalleryImage({ children, imageWidth }) {
       animate={controls}
       variants={imageVariants}
       className={`image image--${imageWidth}`}
+      onContextMenu={e => e.preventDefault()}
     >
       {children}
     </motion.div>
