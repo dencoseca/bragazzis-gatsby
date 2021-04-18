@@ -85,9 +85,6 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
       <div
         className="header__mobile-menu-button"
         onClick={() => toggleMenu()}
-        onKeyPress={() => toggleMenu()}
-        role="button"
-        tabIndex={0}
       >
         <motion.div
           className="line"
