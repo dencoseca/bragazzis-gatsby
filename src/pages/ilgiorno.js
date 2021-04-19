@@ -19,12 +19,6 @@ function Ilgiorno({ location }) {
             alt="sandwich board sign outside cafe"
           />
         </GalleryImage>
-        <GalleryImage imageWidth="40">
-          <StaticImage
-            src="../images/stacked-chairs-morning.jpg"
-            alt="chairs stacked inside"
-          />
-        </GalleryImage>
         <GalleryImage imageWidth="60">
           <StaticImage
             src="../images/sandwich-prep-duo.jpg"
@@ -43,9 +37,6 @@ function Ilgiorno({ location }) {
             alt="olive oil on bread"
           />
         </GalleryImage>
-        <GalleryImage imageWidth="60">
-          <StaticImage src="../images/sanger-mix.jpg" alt="sandwich mix" />
-        </GalleryImage>
         <GalleryImage imageWidth="70">
           <StaticImage
             src="../images/sangers-in-baskets.jpg"
@@ -54,20 +45,8 @@ function Ilgiorno({ location }) {
         </GalleryImage>
         <GalleryImage imageWidth="50">
           <StaticImage
-            src="../images/prep-cleanup.jpg"
-            alt="cleaning up the kitchen"
-          />
-        </GalleryImage>
-        <GalleryImage imageWidth="50">
-          <StaticImage
             src="../images/writing-cake-labels.jpg"
             alt="writing the cake labels"
-          />
-        </GalleryImage>
-        <GalleryImage imageWidth="45">
-          <StaticImage
-            src="../images/pav.jpg"
-            alt="customer waiting for coffee"
           />
         </GalleryImage>
         <GalleryImage imageWidth="60">
@@ -110,12 +89,6 @@ function Ilgiorno({ location }) {
           <StaticImage
             src="../images/joe-espresso-cup.jpg"
             alt="serving an espresso"
-          />
-        </GalleryImage>
-        <GalleryImage imageWidth="60">
-          <StaticImage
-            src="../images/tom-hand-gesture.jpg"
-            alt="baristas having fun"
           />
         </GalleryImage>
         <GalleryImage imageWidth="65">
@@ -195,12 +168,6 @@ function Ilgiorno({ location }) {
           <StaticImage
             src="../images/slicing-parma.jpg"
             alt="slicing parma ham"
-          />
-        </GalleryImage>
-        <GalleryImage imageWidth="50">
-          <StaticImage
-            src="../images/salad-mix-bowl.jpg"
-            alt="salad mix in a bowl"
           />
         </GalleryImage>
         <GalleryImage imageWidth="65">
