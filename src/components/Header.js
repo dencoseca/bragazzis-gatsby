@@ -60,7 +60,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
     >
       <div className="header__tag">Purveyors of quality Italian goods</div>
       <div className="header__logo-wrapper">
-        <Link to="/">
+        <Link to="/" aria-label="home">
           <svg
             width="100%"
             viewBox="0 0 50 50"
@@ -82,10 +82,7 @@ function Header({ location, menuIsOpen, setMenuIsOpen }) {
           Il Giorno
         </Link>
       </nav>
-      <div
-        className="header__mobile-menu-button"
-        onClick={() => toggleMenu()}
-      >
+      <div className="header__mobile-menu-button" onClick={() => toggleMenu()}>
         <motion.div
           className="line"
           initial="closed"
