@@ -30,6 +30,7 @@ module.exports = {
       options: {
         name: `Bragazzi's`,
         short_name: `Bragazzi's`,
+        description: `Purveyors of quality Italian goods. Bragazzi's is a cafe, shop and delicatessen.`,
         start_url: `/`,
         background_color: `#f6f4f1`,
         theme_color: `#1d1d1d`,
