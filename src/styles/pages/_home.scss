@@ -8,7 +8,6 @@
   text-align: center;
   height: 50vh;
   height: calc(var(--vh, 1vh) * 50);
-  height: --webkit-fill-available;
 
   @media (max-width: $mobile) {
     display: flex;
