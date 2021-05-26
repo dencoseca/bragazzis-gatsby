@@ -3,27 +3,27 @@
 // ===============
 
 // Reset
-@import "./normalize.scss";
+@import "normalize";
 
 // Variables
-@import "./variables.scss";
+@import "variables";
 
 // Fonts
-@import "./typography.scss";
+@import "typography";
 
 // Components
-@import "./components/cover.scss";
-@import "./components/floatingItems.scss";
-@import "./components/header.scss";
-@import "./components/footer.scss";
-@import "./components/fullWidthBanner.scss";
-@import "./components/404.scss";
-@import "./components/menu.scss";
+@import "components/cover";
+@import "components/floatingItems";
+@import "components/header";
+@import "components/footer";
+@import "components/fullWidthBanner";
+@import "components/404";
+@import "components/menu";
 
 // Pages
-@import "./pages/home.scss";
-@import "./pages/lastoria.scss";
-@import "./pages/ilgiorno.scss";
+@import "pages/home";
+@import "pages/lastoria";
+@import "pages/ilgiorno";
 
 // ===============
 // General Styles
