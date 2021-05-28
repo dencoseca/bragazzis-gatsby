@@ -8,7 +8,7 @@ Bragazzi’s is a traditional Italian cafe, delicatessen and shop. It’s deeply
 - SASS
 - framer-motion
 
-I wanted to get the most out of the beautiful photography we had available. The client wanted to update business information based on Google Business Data so the he could keep using the interface he was familiar with. There also needed to be the opportunity to add shop functionality in the future. Gatsby’s image components and huge plugin library for API calls making data available through graphql page queries, coupled with (as of 3.0) the Shopify plugin as an option in the future, made Gatsby a great choice for this project.
+I wanted to get the most out of the beautiful photography we had available. The client wanted to update business information based on Google Business Data so that he could keep using the interface he was familiar with. There also needed to be the opportunity to add shop functionality in the future. Gatsby’s image components and huge plugin library for API calls making data available through graphql page queries, coupled with (as of 3.0) the Shopify plugin as an option in the future, made Gatsby a great choice for this project.
 
 #### Live link
 
@@ -26,6 +26,6 @@ Testing for visual bugs on multiple devices is much more important with commissi
 
 ## Skills Gained
 
-- Gatsby 3.0
-- SEO
-- Working to a client’s brief
+    * Gatsby 3.0
+    * SEO
+    * Working to a client’s brief
