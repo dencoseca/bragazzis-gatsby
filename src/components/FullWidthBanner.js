@@ -23,7 +23,7 @@ function FullWidthBanner({
     [0.7, 1],
     [vh * -1, vh * 3]
   )
-  // Responsive selection of scroll aniamtion
+  // Responsive selection of scroll animation
   const textScrollTranslateYValue =
     width >= tablet ? textScrollLaptop : width >= mobile ? textScrollTablet : 0
 
