@@ -33,7 +33,7 @@ function Footer({ location }) {
             <li className="text--sm">
               <a
                 className={textLinkClassName}
-                href="mailto:info@braazzis.co.uk"
+                href="mailto:info@bragazzis.co.uk"
               >
                 info@bragazzis.co.uk
               </a>
